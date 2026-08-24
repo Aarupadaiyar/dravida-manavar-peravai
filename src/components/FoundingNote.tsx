@@ -22,8 +22,8 @@ export default function FoundingNote() {
             <p>
               We began as a handful of students meeting after college hours, and grew into a movement of gatherings,
               protests and clubs because young people were hungry for a space that took their questions seriously.
-              Every protest we lead and every club we build carries the same self-respect ideology forward &mdash;
-              for the next Tamil generation.
+              Every protest we lead and every club we build carries the same self-respect ideology forward for the
+              next Tamil generation.
             </p>
           </div>
           <div className="note-photo">

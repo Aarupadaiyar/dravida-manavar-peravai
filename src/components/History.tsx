@@ -23,7 +23,7 @@ const TIMELINE: TimelineItem[] = [
   {
     date: 'Present',
     title: 'Ongoing Institution-Building',
-    body: 'DMP carries its ideology forward through Karunchattai Pathippagam (Blackshirt Publishing House), Dravida Palli (Dravidian Ideological School) and Dravida Nutpu Kazhagam (Dravidian Friendship Forum) — passing foundational thought to millennial and Gen-Z students.',
+    body: 'DMP carries its ideology forward through Karunchattai Pathippagam (Blackshirt Publishing House), Dravida Palli (Dravidian Ideological School) and Dravida Nutpu Kazhagam (Dravidian Friendship Forum), passing foundational thought to millennial and Gen-Z students.',
   },
 ]
 

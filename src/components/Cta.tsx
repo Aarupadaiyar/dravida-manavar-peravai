@@ -10,7 +10,7 @@ export default function Cta() {
             Every Tamil student who stays silent is a voice the next generation won&apos;t get to hear.
           </p>
           <p className="cta-sub">
-            Caste doesn&apos;t end on its own, and rights aren&apos;t handed down &mdash; they&apos;re won by people
+            Caste doesn&apos;t end on its own, and rights aren&apos;t handed down; they&apos;re won by people
             who organise. Stand with thousands of students already building a more equal Tamil Nadu, one protest, one
             gathering, one conversation at a time.
           </p>

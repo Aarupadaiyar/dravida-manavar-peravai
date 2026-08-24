@@ -16,8 +16,8 @@ export default function SecretaryNote() {
             <h3>Mr. Arul</h3>
             <div className="role">Secretary, Dravida Manavar Peravai</div>
             <p>
-              My role is to make sure that every idea this movement believes in actually reaches the ground &mdash;
-              every protest, every gathering, every club activity organised across Tamil Nadu.
+              My role is to make sure that every idea this movement believes in actually reaches the ground: every
+              protest, every gathering, every club activity organised across Tamil Nadu.
             </p>
             <p>
               Behind every number you see below is a team of student volunteers who show up early, stay late and

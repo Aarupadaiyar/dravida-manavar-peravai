@@ -8,7 +8,7 @@ const IMPACT: ImpactItem[] = [
   {
     num: '01',
     title: 'Cups & Conversation',
-    body: 'Unlike traditional radical political banners, DMP popularised structured discussion circles called "Cups & Conversation" — casual yet deeply academic forums that educate students on the philosophies of Thanthai Periyar, B. R. Ambedkar and Arignar Anna.',
+    body: 'Unlike traditional radical political banners, DMP popularised structured discussion circles called "Cups & Conversation," casual yet deeply academic forums that educate students on the philosophies of Thanthai Periyar, B. R. Ambedkar and Arignar Anna.',
   },
   {
     num: '02',
@@ -18,7 +18,7 @@ const IMPACT: ImpactItem[] = [
   {
     num: '03',
     title: 'Social Justice Over Electoral Ambition',
-    body: "Unlike mainstream student wings tied to electoral machinery, DMP's primary emphasis remains ideological literacy — a training ground for public speaking, writing and logical debate rooted in scientific temper and rationalism.",
+    body: "Unlike mainstream student wings tied to electoral machinery, DMP's primary emphasis remains ideological literacy, a training ground for public speaking, writing and logical debate rooted in scientific temper and rationalism.",
   },
 ]
 

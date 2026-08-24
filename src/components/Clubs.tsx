@@ -56,7 +56,7 @@ const CLUBS: Club[] = [
     title: 'De-Annihilation Club',
     subtitle: 'Anti-caste awareness wing',
     description:
-      "Named for Ambedkar's call to annihilate caste — organising discussions and campaigns against caste discrimination.",
+      "Named for Ambedkar's call to annihilate caste, organising discussions and campaigns against caste discrimination.",
     features: ['Anti-Caste Study Circles', 'Campus Campaigns', 'Awareness Drives', 'Ambedkarite Thought'],
     logo: deAnnihilationLogo,
   },

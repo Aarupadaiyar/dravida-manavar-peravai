@@ -10,7 +10,7 @@ export default function VisionMission() {
             <h2 className="vm-lamp-title lamp-fade-in">Vision</h2>
           </LampContainer>
           <p className="vm-floating-text">
-            A Tamil society free of caste, superstition and inherited privilege &mdash; where every student,
+            A Tamil society free of caste, superstition and inherited privilege, where every student,
             regardless of birth or background, stands as an equal citizen with the same access to education,
             opportunity and self-respect.
           </p>
