@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --bg: #060506;
-  --bg-alt: #0b0909;
+  --bg: #000000;
+  --bg-alt: #050505;
   --panel: #0f0d0e;
   --line: rgba(255, 255, 255, 0.08);
   --ink: #f1ede8;
@@ -370,7 +370,7 @@ a:hover {
 /* SECTION SHELL */
 .section {
   position: relative;
-  padding: 110px 0;
+  padding: 68px 0;
   background: var(--bg);
   border-top: 1px solid var(--line);
 }
@@ -396,12 +396,12 @@ a:hover {
 
 /* VISION/MISSION */
 .vm-section {
-  padding: 56px 0 70px;
+  padding: 40px 0 44px;
   overflow: hidden;
 }
 .vm-section-eyebrow {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 .vm-lamp-title {
   font-family: var(--font-display);
