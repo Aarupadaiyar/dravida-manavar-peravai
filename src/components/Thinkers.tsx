@@ -17,7 +17,7 @@ const THINKERS: Thinker[] = [
     photo: karlMarxPhoto,
     name: 'Karl Marx',
     role: 'Philosopher & Economist',
-    bio: "Exposed how capital concentrates wealth and power in the hands of a few. His call for a classless, equal society gave the world's working people a language to organise, resist and demand a fairer share of what they build.",
+    bio: 'His critique of capitalism gave the world a language for economic equality.',
     cardClass: 'thinker-marx',
   },
   {
@@ -25,7 +25,7 @@ const THINKERS: Thinker[] = [
     photo: periyarPhoto,
     name: 'Periyar E. V. Ramasamy',
     role: 'Founder, Self-Respect Movement',
-    bio: 'Rejected caste, blind ritual and gender inequality across Tamil Nadu. He taught generations to question before believing, and built the Self-Respect Movement that remains the root of every Dravidian party today.',
+    bio: 'Taught Tamils to reject caste and blind belief, and question before believing.',
     cardClass: 'thinker-periyar',
   },
   {
@@ -33,7 +33,7 @@ const THINKERS: Thinker[] = [
     photo: ambedkarPhoto,
     name: 'Dr. B. R. Ambedkar',
     role: 'Architect, Indian Constitution',
-    bio: "Fought untouchability his entire life and wrote equality directly into India's founding law. His work on reservation, representation and constitutional rights remains the legal backbone of social justice in India.",
+    bio: "Architect of India's Constitution and a lifelong crusader against untouchability.",
     cardClass: 'thinker-ambedkar',
   },
 ]
@@ -51,10 +51,14 @@ export default function Thinkers() {
         <div className="thinkers-grid">
           {THINKERS.map((t) => (
             <div key={t.id} className={`thinker-card ${t.cardClass}`}>
-              <img src={t.photo} alt={t.name} className="thinker-avatar" />
-              <h3 className="thinker-name">{t.name}</h3>
-              <p className="thinker-role">{t.role}</p>
-              <p className="thinker-bio">{t.bio}</p>
+              <div className="thinker-photo-wrap">
+                <img src={t.photo} alt={t.name} className="thinker-avatar" />
+              </div>
+              <div className="thinker-text">
+                <h3 className="thinker-name">{t.name}</h3>
+                <p className="thinker-role">{t.role}</p>
+                <p className="thinker-bio">{t.bio}</p>
+              </div>
             </div>
           ))}
         </div>

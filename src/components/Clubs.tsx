@@ -1,3 +1,4 @@
+import CardFlip from './ui/card-flip'
 import spreadGreenLogo from '../assets/clubs/spread-green.png'
 import goRedLogo from '../assets/clubs/go-red.png'
 import overseasStudentsLogo from '../assets/clubs/overseas-tamil-students.png'
@@ -6,16 +7,59 @@ import deAnnihilationLogo from '../assets/clubs/de-annihilation.png'
 
 interface Club {
   id: string
-  name: string
+  title: string
+  subtitle: string
+  description: string
+  features: string[]
   logo: string
 }
 
 const CLUBS: Club[] = [
-  { id: 'spread-green', name: 'Spread Green', logo: spreadGreenLogo },
-  { id: 'go-red', name: 'Go Red', logo: goRedLogo },
-  { id: 'overseas-students', name: 'Overseas Tamil Students Empowerment Club', logo: overseasStudentsLogo },
-  { id: 'repub-rainbows', name: 'REPUB Rainbows', logo: repubRainbowsLogo },
-  { id: 'de-annihilation', name: 'De-Annihilation Club', logo: deAnnihilationLogo },
+  {
+    id: 'spread-green',
+    title: 'Spread Green',
+    subtitle: 'Environmental action wing',
+    description:
+      'Tree plantation drives, campus greening and climate awareness campaigns led by student volunteers across Tamil Nadu.',
+    features: ['Tree Plantation', 'Campus Greening', 'Climate Awareness', 'Eco Campaigns'],
+    logo: spreadGreenLogo,
+  },
+  {
+    id: 'go-red',
+    title: 'Go Red',
+    subtitle: 'Health & blood donation wing',
+    description:
+      'Organising blood donation camps and health awareness drives to keep our communities safe and cared for.',
+    features: ['Blood Donation', 'Health Camps', 'Awareness Drives', 'Community Care'],
+    logo: goRedLogo,
+  },
+  {
+    id: 'overseas-students',
+    title: 'Overseas Students',
+    subtitle: 'Support for Tamils abroad',
+    description:
+      'Connecting and supporting Tamil students studying overseas with mentorship, resources and a home away from home.',
+    features: ['Mentorship', 'Peer Network', 'Resource Support', 'Global Tamils'],
+    logo: overseasStudentsLogo,
+  },
+  {
+    id: 'repub-rainbows',
+    title: 'REPUB Rainbows',
+    subtitle: 'Inclusivity & pride wing',
+    description:
+      'Building a safe, inclusive space for LGBTQ+ students within the movement, rooted in the same self-respect ideology.',
+    features: ['Safe Spaces', 'Peer Support', 'Awareness', 'Inclusion'],
+    logo: repubRainbowsLogo,
+  },
+  {
+    id: 'de-annihilation',
+    title: 'De-Annihilation Club',
+    subtitle: 'Anti-caste awareness wing',
+    description:
+      "Named for Ambedkar's call to annihilate caste — organising discussions and campaigns against caste discrimination.",
+    features: ['Anti-Caste Study Circles', 'Campus Campaigns', 'Awareness Drives', 'Ambedkarite Thought'],
+    logo: deAnnihilationLogo,
+  },
 ]
 
 export default function Clubs() {
@@ -30,12 +74,14 @@ export default function Clubs() {
         </div>
         <div className="clubs-grid">
           {CLUBS.map((club) => (
-            <div key={club.id} className="club-card">
-              <div className="club-icon">
-                <img src={club.logo} alt={club.name} />
-              </div>
-              <div className="club-name">{club.name}</div>
-            </div>
+            <CardFlip
+              key={club.id}
+              title={club.title}
+              subtitle={club.subtitle}
+              description={club.description}
+              features={club.features}
+              logo={club.logo}
+            />
           ))}
         </div>
       </div>

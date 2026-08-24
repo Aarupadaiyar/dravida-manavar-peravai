@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import VisionMission from './components/VisionMission'
+import History from './components/History'
+import Impact from './components/Impact'
 import Thinkers from './components/Thinkers'
 import IdeologyLeaders from './components/IdeologyLeaders'
 import FoundingNote from './components/FoundingNote'
@@ -16,6 +18,8 @@ export default function App() {
       <Navbar />
       <Hero />
       <VisionMission />
+      <History />
+      <Impact />
       <Thinkers />
       <IdeologyLeaders />
       <FoundingNote />

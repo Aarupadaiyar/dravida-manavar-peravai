@@ -1,4 +1,15 @@
-import { useState } from 'react'
+import {
+  MorphingDialog,
+  MorphingDialogTrigger,
+  MorphingDialogContent,
+  MorphingDialogTitle,
+  MorphingDialogImage,
+  MorphingDialogSubtitle,
+  MorphingDialogClose,
+  MorphingDialogDescription,
+  MorphingDialogContainer,
+} from './core/morphing-dialog'
+import { PlusIcon } from 'lucide-react'
 import annaPhoto from '../assets/leaders/anna.jpg'
 import kalaignarPhoto from '../assets/leaders/kalaignar.jpg'
 import stalinPhoto from '../assets/leaders/stalin.jpg'
@@ -44,9 +55,6 @@ const LEADERS: Leader[] = [
 ]
 
 export default function IdeologyLeaders() {
-  const [leaderId, setLeaderId] = useState('anna')
-  const selected = LEADERS.find((l) => l.id === leaderId) ?? LEADERS[0]
-
   return (
     <section className="section section-alt" id="ideology-leaders">
       <div className="wrap">
@@ -56,33 +64,47 @@ export default function IdeologyLeaders() {
             Ideology <span className="accent">Leaders</span>
           </h2>
         </div>
-        <div className="leaders-box">
-          <div className="leaders-photos">
-            {LEADERS.map((leader) => {
-              const active = leader.id === leaderId
-              return (
-                <button
-                  key={leader.id}
-                  type="button"
-                  className={`leader-tab ${active ? 'leader-tab-active' : ''}`.trim()}
-                  style={{ backgroundImage: `url(${leader.photo})` }}
-                  onClick={() => setLeaderId(leader.id)}
-                >
-                  <span className="leader-tab-scrim" />
-                  <span className="leader-tab-info">
-                    <span className="leader-tab-name">{leader.short}</span>
-                    <span className="leader-tab-role">{leader.years}</span>
+        <div className="leaders-cards-grid">
+          {LEADERS.map((leader) => (
+            <MorphingDialog
+              key={leader.id}
+              transition={{ type: 'spring', bounce: 0.05, duration: 0.25 }}
+            >
+              <MorphingDialogTrigger className="leader-card-trigger">
+                <MorphingDialogImage src={leader.photo} alt={leader.name} className="leader-card-photo" />
+                <div className="leader-card-footer">
+                  <div>
+                    <MorphingDialogTitle className="leader-card-name">{leader.short}</MorphingDialogTitle>
+                    <MorphingDialogSubtitle className="leader-card-role">{leader.years}</MorphingDialogSubtitle>
+                  </div>
+                  <span className="leader-card-plus" aria-hidden="true">
+                    <PlusIcon size={14} />
                   </span>
-                </button>
-              )
-            })}
-          </div>
-          <div className="leaders-desc">
-            <div className="eyebrow">{selected.years}</div>
-            <h3>{selected.name}</h3>
-            <p>{selected.bio}</p>
-            <span className="event-tag">{selected.event}</span>
-          </div>
+                </div>
+              </MorphingDialogTrigger>
+              <MorphingDialogContainer>
+                <MorphingDialogContent className="leader-dialog-content">
+                  <MorphingDialogImage src={leader.photo} alt={leader.name} className="leader-dialog-photo" />
+                  <div className="leader-dialog-body">
+                    <MorphingDialogTitle className="leader-dialog-name">{leader.name}</MorphingDialogTitle>
+                    <MorphingDialogSubtitle className="leader-dialog-role">{leader.years}</MorphingDialogSubtitle>
+                    <MorphingDialogDescription
+                      disableLayoutAnimation
+                      variants={{
+                        initial: { opacity: 0, y: 24 },
+                        animate: { opacity: 1, y: 0 },
+                        exit: { opacity: 0, y: 24 },
+                      }}
+                    >
+                      <p className="leader-dialog-bio">{leader.bio}</p>
+                      <span className="event-tag">{leader.event}</span>
+                    </MorphingDialogDescription>
+                  </div>
+                  <MorphingDialogClose />
+                </MorphingDialogContent>
+              </MorphingDialogContainer>
+            </MorphingDialog>
+          ))}
         </div>
       </div>
     </section>

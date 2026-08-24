@@ -1,0 +1,46 @@
+import * as React from 'react'
+import { cn } from '@/lib/utils'
+
+export const LampContainer = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode
+  className?: string
+}) => {
+  return (
+    <div
+      className={cn(
+        'relative flex min-h-[52vh] sm:min-h-[58vh] md:min-h-[64vh] w-full flex-col items-center justify-center overflow-hidden rounded-md bg-slate-950 z-0',
+        className,
+      )}
+    >
+      <div className="relative isolate z-0 flex w-full flex-1 scale-y-125 items-center justify-center">
+        <div
+          style={{ backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))` }}
+          className="lamp-beam-in absolute inset-auto right-1/2 h-40 sm:h-48 md:h-56 w-[22rem] overflow-visible bg-gradient-conic from-red-500 via-transparent to-transparent text-white [--conic-position:from_70deg_at_center_top]"
+        >
+          <div className="absolute bottom-0 left-0 z-20 h-32 sm:h-36 md:h-40 w-full bg-slate-950 [mask-image:linear-gradient(to_top,white,transparent)]" />
+          <div className="absolute bottom-0 left-0 z-20 h-full w-40 bg-slate-950 [mask-image:linear-gradient(to_right,white,transparent)]" />
+        </div>
+        <div
+          style={{ backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))` }}
+          className="lamp-beam-in absolute inset-auto left-1/2 h-40 sm:h-48 md:h-56 w-[22rem] bg-gradient-conic from-transparent via-transparent to-red-500 text-white [--conic-position:from_290deg_at_center_top]"
+        >
+          <div className="absolute bottom-0 right-0 z-20 h-full w-40 bg-slate-950 [mask-image:linear-gradient(to_left,white,transparent)]" />
+          <div className="absolute bottom-0 right-0 z-20 h-32 sm:h-36 md:h-40 w-full bg-slate-950 [mask-image:linear-gradient(to_top,white,transparent)]" />
+        </div>
+        <div className="absolute top-1/2 h-40 w-full translate-y-8 scale-x-150 bg-slate-950 blur-2xl" />
+        <div className="absolute top-1/2 z-50 h-40 w-full bg-transparent opacity-10 backdrop-blur-md" />
+        <div className="absolute inset-auto z-50 h-28 sm:h-32 md:h-36 w-64 sm:w-80 md:w-[24rem] -translate-y-1/2 rounded-full bg-red-500 opacity-50 blur-3xl" />
+        <div className="lamp-beam-in absolute inset-auto z-30 h-28 sm:h-32 md:h-36 w-48 sm:w-56 md:w-64 -translate-y-[4.5rem] sm:-translate-y-[5rem] md:-translate-y-[5.5rem] rounded-full bg-red-400 blur-2xl" />
+        <div className="lamp-beam-in absolute inset-auto z-50 h-0.5 w-[22rem] -translate-y-[5.5rem] sm:-translate-y-[6rem] md:-translate-y-[6.5rem] bg-red-400" />
+        <div className="absolute inset-auto z-40 h-32 sm:h-36 md:h-40 w-full -translate-y-[9rem] sm:-translate-y-[10rem] md:-translate-y-[11rem] bg-slate-950" />
+      </div>
+
+      <div className="lamp-fade-in relative z-50 flex -translate-y-40 sm:-translate-y-48 md:-translate-y-56 flex-col items-center px-5">
+        {children}
+      </div>
+    </div>
+  )
+}
