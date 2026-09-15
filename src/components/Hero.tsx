@@ -1,17 +1,17 @@
 import { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import Button from './Button'
 import bgVideo from '../assets/background.mp4'
+import { useLang } from '../i18n/LanguageContext'
 
 const SCROLL_LERP = 0.08
-const ROLE_WORDS = ['Equality', 'Justice', 'Unity', 'Progress']
-const ROLE_INTERVAL_MS = 2200
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement | null>(null)
   const [glow, setGlow] = useState(0)
-  const [roleIndex, setRoleIndex] = useState(0)
   const targetGlow = useRef(0)
   const rafId = useRef<number | null>(null)
+  const { t } = useLang()
 
   useEffect(() => {
     const hero = heroRef.current
@@ -40,17 +40,10 @@ export default function Hero() {
     }
   }, [])
 
-  useEffect(() => {
-    const id = window.setInterval(() => {
-      setRoleIndex((i) => (i + 1) % ROLE_WORDS.length)
-    }, ROLE_INTERVAL_MS)
-    return () => window.clearInterval(id)
-  }, [])
-
   const overlayStyle = { opacity: 0.44 + glow * 0.18 }
 
   return (
-    <section className="hero hero-sun" id="dmp-hero" ref={heroRef}>
+    <section className="hero hero-sun" id="top" ref={heroRef}>
       <video
         className="hero-video"
         src={bgVideo}
@@ -63,31 +56,28 @@ export default function Hero() {
       <div className="hero-vignette" />
       <div className="hero-grain" />
       <div className="hero-inner">
-        <div className="eyebrow hero-eyebrow">Self-Respect &middot; Social Justice &middot; Student Power</div>
+        <div className="eyebrow hero-eyebrow">{t('hero.eyebrow')}</div>
+        <p className="hero-welcome">
+          {t('hero.welcome')} {t('hero.welcomeName')}
+        </p>
         <h1 className="hero-banner">
           <span className="hero-banner-row">திராவிட</span>
           <span className="hero-banner-row">மாணவர்</span>
           <span className="hero-banner-row">பேரவை</span>
         </h1>
         <p className="hero-role-line">
-          A movement for{' '}
-          <span className="hero-role-word" key={roleIndex}>
-            {ROLE_WORDS[roleIndex]}
-          </span>
-          .
+          <span className="hero-role-word">{t('hero.tagline')}</span>
         </p>
-        <p className="hero-tag">
-          A student movement carrying forward the Dravidian ideal of equality, rationalism and dignity for every Tamil.
-        </p>
+        <p className="hero-tag">{t('hero.tag')}</p>
         <div className="hero-cta-row">
-          <Button className="btn-sun">Join the Movement</Button>
-          <a href="#thinkers" className="btn-sun-outline">
-            Our Ideology
-          </a>
+          <Button className="btn-sun">{t('hero.ctaJoin')}</Button>
+          <Link to="/leaders" className="btn-sun-outline">
+            {t('hero.ctaLeaders')}
+          </Link>
         </div>
       </div>
       <div className="scroll-cue">
-        <span>Scroll</span>
+        <span>{t('hero.scroll')}</span>
         <span className="scroll-line">
           <span className="scroll-line-dot" />
         </span>

@@ -1,22 +1,27 @@
 import { useEffect, useRef, useState } from 'react'
+import { Users, Megaphone, CalendarDays } from 'lucide-react'
 import { AnimatedNumber } from './core/animated-number'
+import { useLang } from '../i18n/LanguageContext'
+import type { TranslationKey } from '../i18n/translations'
 
 interface Stat {
   id: string
   target: number
   suffix: string
-  label: string
+  labelKey: TranslationKey
+  Icon: typeof Users
 }
 
 const STATS: Stat[] = [
-  { id: 'lives', target: 8, suffix: ' Crore+', label: 'Lives Touched' },
-  { id: 'protests', target: 600, suffix: '+', label: 'Protests Led' },
-  { id: 'gatherings', target: 1500, suffix: '+', label: 'Gatherings Organised' },
+  { id: 'lives', target: 8, suffix: ' Crore+', labelKey: 'stats.livesLabel', Icon: Users },
+  { id: 'protests', target: 600, suffix: '+', labelKey: 'stats.protestsLabel', Icon: Megaphone },
+  { id: 'gatherings', target: 1500, suffix: '+', labelKey: 'stats.gatheringsLabel', Icon: CalendarDays },
 ]
 
 export default function Stats() {
   const sectionRef = useRef<HTMLElement | null>(null)
   const [inView, setInView] = useState(false)
+  const { t } = useLang()
 
   useEffect(() => {
     const el = sectionRef.current
@@ -40,11 +45,14 @@ export default function Stats() {
         <div className="stats-grid">
           {STATS.map((stat) => (
             <div key={stat.id} className="stat-cell">
+              <span className="stat-icon">
+                <stat.Icon size={20} />
+              </span>
               <div className="stat-num">
                 <AnimatedNumber value={inView ? stat.target : 0} />
                 {stat.suffix}
               </div>
-              <div className="stat-label">{stat.label}</div>
+              <div className="stat-label">{t(stat.labelKey)}</div>
             </div>
           ))}
         </div>

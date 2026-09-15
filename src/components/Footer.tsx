@@ -1,6 +1,11 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.jpg'
+import { useLang } from '../i18n/LanguageContext'
+import { SOCIALS } from './SocialIcons'
 
 export default function Footer() {
+  const { t } = useLang()
+
   return (
     <footer className="footer">
       <div className="wrap">
@@ -16,27 +21,37 @@ export default function Footer() {
           </div>
           <div className="footer-cols">
             <div className="footer-col">
-              <h4>Movement</h4>
-              <a href="#thinkers">Ideology</a>
-              <a href="#ideology-leaders">Leaders</a>
-              <a href="#clubs">Clubs</a>
+              <h4>{t('footer.movement')}</h4>
+              <Link to="/about">{t('nav.about')}</Link>
+              <Link to="/leaders">{t('nav.leaders')}</Link>
+              <Link to="/events">{t('nav.events')}</Link>
             </div>
             <div className="footer-col">
-              <h4>Leadership</h4>
-              <a href="#founding-note">Founder&apos;s Note</a>
-              <a href="#secretary-note">Secretary&apos;s Note</a>
+              <h4>{t('footer.leadership')}</h4>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                {t('founderPopup.founderTab')}
+              </a>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                {t('founderPopup.secretaryTab')}
+              </a>
             </div>
             <div className="footer-col">
-              <h4>Connect</h4>
-              <a href="#">Instagram</a>
-              <a href="#">YouTube</a>
-              <a href="#">Contact</a>
+              <h4>{t('footer.connect')}</h4>
+              <Link to="/contact">{t('nav.contact')}</Link>
+              {/* TODO: real contact details (email/phone/address) pending from user */}
+              <div className="footer-social-row">
+                {SOCIALS.map(({ id, Icon, href, label }) => (
+                  <a key={id} href={href} className="footer-social-icon" aria-label={label}>
+                    <Icon />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>&copy; Dravida Manavar Peravai. All rights reserved.</span>
-          <span>Self-Respect &middot; Social Justice &middot; Student Power</span>
+          <span>&copy; {t('footer.rights')}</span>
+          <span>{t('hero.eyebrow')}</span>
         </div>
       </div>
     </footer>

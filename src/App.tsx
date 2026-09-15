@@ -1,33 +1,23 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import VisionMission from './components/VisionMission'
-import History from './components/History'
-import Impact from './components/Impact'
-import Thinkers from './components/Thinkers'
-import IdeologyLeaders from './components/IdeologyLeaders'
-import FoundingNote from './components/FoundingNote'
-import SecretaryNote from './components/SecretaryNote'
-import Stats from './components/Stats'
-import Clubs from './components/Clubs'
-import Cta from './components/Cta'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import About from './pages/About'
+import LeadersPage from './pages/Leaders'
+import Events from './pages/Events'
+import ClubDetail from './pages/ClubDetail'
+import Contact from './pages/Contact'
 
 export default function App() {
   return (
-    <div className="site">
-      <Navbar />
-      <Hero />
-      <VisionMission />
-      <History />
-      <Impact />
-      <Thinkers />
-      <IdeologyLeaders />
-      <FoundingNote />
-      <SecretaryNote />
-      <Stats />
-      <Clubs />
-      <Cta />
-      <Footer />
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/leaders" element={<LeadersPage />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/events/:clubId" element={<ClubDetail />} />
+        <Route path="/contact" element={<Contact />} />
+      </Route>
+    </Routes>
   )
 }

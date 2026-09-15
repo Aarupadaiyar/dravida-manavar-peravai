@@ -9,6 +9,7 @@ export interface CardFlipProps {
   features?: string[]
   logo?: string
   className?: string
+  onClick?: () => void
 }
 
 export default function CardFlip({
@@ -18,14 +19,20 @@ export default function CardFlip({
   features = ['UI/UX', 'Modern Design', 'Tailwind CSS', 'Kokonut UI'],
   logo,
   className,
+  onClick,
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
     <div
-      className={cn('group relative h-[340px] w-full max-w-[300px] [perspective:2000px]', className)}
+      className={cn(
+        'group relative h-[340px] w-full max-w-[300px] [perspective:2000px]',
+        onClick && 'cursor-pointer',
+        className,
+      )}
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
+      onClick={onClick}
     >
       <div
         className={cn(

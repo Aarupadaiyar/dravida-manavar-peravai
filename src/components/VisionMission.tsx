@@ -1,29 +1,37 @@
-import { LampContainer } from './ui/lamp'
+import { Compass, Target } from 'lucide-react'
+import { useLang } from '../i18n/LanguageContext'
+import { Reveal } from './core/Reveal'
 
 export default function VisionMission() {
+  const { t } = useLang()
+
   return (
     <section className="section vm-section section-alt" id="vision-mission">
-      <div className="eyebrow vm-section-eyebrow">Our Compass</div>
-      <div className="vm-lamp-row">
-        <div className="vm-lamp-col">
-          <LampContainer>
-            <h2 className="vm-lamp-title lamp-fade-in">Vision</h2>
-          </LampContainer>
-          <p className="vm-floating-text">
-            A Tamil society free of caste, superstition and inherited privilege, where every student,
-            regardless of birth or background, stands as an equal citizen with the same access to education,
-            opportunity and self-respect.
-          </p>
-        </div>
-        <div className="vm-lamp-col">
-          <LampContainer>
-            <h2 className="vm-lamp-title lamp-fade-in">Mission</h2>
-          </LampContainer>
-          <p className="vm-floating-text">
-            To organise, educate and mobilise Tamil students around the Dravidian principles of rationalism and
-            social justice; to defend the language, land and rights of Tamils; and to build a new generation of
-            fearless, questioning leaders.
-          </p>
+      <div className="wrap">
+        <div className="eyebrow vm-section-eyebrow">{t('visionMission.eyebrow')}</div>
+        <div className="vm-grid">
+          <Reveal className="vm-card">
+            <span className="vm-card-icon">
+              <Compass size={22} />
+            </span>
+            <h3>{t('visionMission.visionTitle')}</h3>
+            {t('visionMission.visionBody')
+              .split('\n\n')
+              .map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+          </Reveal>
+          <Reveal className="vm-card" delayMs={100}>
+            <span className="vm-card-icon">
+              <Target size={22} />
+            </span>
+            <h3>{t('visionMission.missionTitle')}</h3>
+            {t('visionMission.missionBody')
+              .split('\n\n')
+              .map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+          </Reveal>
         </div>
       </div>
     </section>

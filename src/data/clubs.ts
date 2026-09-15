@@ -1,11 +1,10 @@
-import CardFlip from './ui/card-flip'
 import spreadGreenLogo from '../assets/clubs/spread-green.png'
 import goRedLogo from '../assets/clubs/go-red.png'
 import overseasStudentsLogo from '../assets/clubs/overseas-tamil-students.png'
 import repubRainbowsLogo from '../assets/clubs/repub-rainbows.png'
 import deAnnihilationLogo from '../assets/clubs/de-annihilation.png'
 
-interface Club {
+export interface Club {
   id: string
   title: string
   subtitle: string
@@ -14,7 +13,7 @@ interface Club {
   logo: string
 }
 
-const CLUBS: Club[] = [
+export const CLUBS: Club[] = [
   {
     id: 'spread-green',
     title: 'Spread Green',
@@ -61,30 +60,3 @@ const CLUBS: Club[] = [
     logo: deAnnihilationLogo,
   },
 ]
-
-export default function Clubs() {
-  return (
-    <section className="section" id="clubs">
-      <div className="wrap">
-        <div className="section-head">
-          <div className="eyebrow">Where Members Take Action</div>
-          <h2 className="section-title">
-            Our <span className="accent">Clubs</span>
-          </h2>
-        </div>
-        <div className="clubs-grid">
-          {CLUBS.map((club) => (
-            <CardFlip
-              key={club.id}
-              title={club.title}
-              subtitle={club.subtitle}
-              description={club.description}
-              features={club.features}
-              logo={club.logo}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
