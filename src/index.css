@@ -387,7 +387,7 @@ a:hover {
   align-items: center;
   font-family: var(--font-tamil);
   font-weight: 800;
-  font-size: clamp(26px, 6.5vw, 60px);
+  font-size: clamp(14px, 5vw, 60px);
   line-height: 1.18;
   color: #fff;
   white-space: nowrap;
