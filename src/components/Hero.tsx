@@ -61,9 +61,7 @@ export default function Hero() {
           {t('hero.welcome')} {t('hero.welcomeName')}
         </p>
         <h1 className="hero-banner">
-          <span className="hero-banner-row">திராவிட</span>
-          <span className="hero-banner-row">மாணவர்</span>
-          <span className="hero-banner-row">பேரவை</span>
+          <span className="hero-banner-row">திராவிட மாணவர் பேரவை</span>
         </h1>
         <p className="hero-role-line">
           <span className="hero-role-word">{t('hero.tagline')}</span>
