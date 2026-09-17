@@ -1409,6 +1409,7 @@ a:hover {
   .timeline-root {
     flex-direction: column;
     gap: 0;
+    overflow-x: visible;
   }
   .timeline-item {
     min-width: 0;
