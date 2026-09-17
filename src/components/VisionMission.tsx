@@ -21,8 +21,8 @@ export default function VisionMission() {
                 <p key={i}>{para}</p>
               ))}
           </Reveal>
-          <Reveal className="vm-card" delayMs={100}>
-            <span className="vm-card-icon">
+          <Reveal className="vm-card vm-card--green" delayMs={100}>
+            <span className="vm-card-icon vm-card-icon--green">
               <Target size={22} />
             </span>
             <h3>{t('visionMission.missionTitle')}</h3>

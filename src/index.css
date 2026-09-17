@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --bg: #faf8f3;
-  --bg-alt: #f2ede3;
+  --bg: #ffffff;
+  --bg-alt: #f0f9f4;
   --panel: #ffffff;
-  --line: rgba(20, 14, 10, 0.12);
-  --ink: #1a1410;
-  --ink-dim: rgba(26, 20, 16, 0.68);
-  --ink-faint: rgba(26, 20, 16, 0.48);
+  --line: rgba(20, 20, 20, 0.1);
+  --ink: #171717;
+  --ink-dim: rgba(23, 23, 23, 0.68);
+  --ink-faint: rgba(23, 23, 23, 0.48);
   --red: #990000;
   --red-bright: #cc0000;
   --red-deep: #400000;
+  --green: #1f7a52;
+  --green-deep: #0f4a30;
   --gold: #a97a1f;
   --blue: #1c4c8c;
-  --shadow-sm: 0 6px 18px rgba(26, 20, 16, 0.06);
-  --shadow-md: 0 14px 32px rgba(26, 20, 16, 0.09);
+  --shadow-sm: 0 6px 18px rgba(23, 23, 23, 0.06);
+  --shadow-md: 0 14px 32px rgba(23, 23, 23, 0.09);
   --nav-height: 78px;
   --font-display: 'Oswald', 'Arial Narrow', sans-serif;
   --font-tamil: 'Catamaran', 'Noto Sans Tamil', sans-serif;
@@ -1106,6 +1108,27 @@ a:hover {
   color: var(--red-bright);
   margin-bottom: 20px;
 }
+.vm-card--green::before {
+  background: var(--green);
+}
+.vm-card-icon--green {
+  background: rgba(31, 122, 82, 0.1);
+  color: var(--green);
+}
+
+/* Complementary green sprinkled across repeating card icons site-wide */
+.impact-grid .impact-card:nth-child(2) .impact-icon,
+.parallel-grid .parallel-card:nth-child(2n) .parallel-card-icon,
+.home-teasers .teaser-card:nth-child(2n) .teaser-card-icon,
+.stats-grid .stat-cell:nth-child(2) .stat-icon {
+  background: rgba(31, 122, 82, 0.1);
+  color: var(--green);
+}
+.home-teasers .teaser-card:nth-child(2n):hover .teaser-card-icon,
+.parallel-grid .parallel-card:nth-child(2n):hover .parallel-card-icon {
+  background: var(--green);
+  color: #fff;
+}
 .vm-card h3 {
   font-family: var(--font-display);
   font-weight: 600;
@@ -1642,12 +1665,21 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 36px;
   height: 36px;
+  padding: 0;
+  line-height: 0;
   border-radius: 999px;
   border: 1px solid var(--line);
   color: var(--ink-dim);
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.footer-social-icon svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 .footer-social-icon:hover {
   background: var(--red);
