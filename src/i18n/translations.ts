@@ -5,6 +5,7 @@ export const translations = {
   'nav.leaders': { ta: 'நமது தலைவர்கள்', en: 'Our Leaders' },
   'nav.forums': { ta: 'மன்றங்கள்', en: 'Forums' },
   'nav.events': { ta: 'நிகழ்வுகள்', en: 'Events' },
+  'nav.blog': { ta: 'வலைப்பதிவு', en: 'Blog' },
   'nav.contact': { ta: 'தொடர்பு கொள்ள', en: 'Contact Us' },
   'nav.join': { ta: 'DMP-இல் இணையுங்கள்', en: 'Join DMP' },
 
@@ -15,7 +16,10 @@ export const translations = {
   },
   'hero.welcome': { ta: 'திராவிட மாணவர் பேரவைக்கு', en: 'Welcome to' },
   'hero.welcomeName': { ta: 'வரவேற்கிறோம்', en: 'Dravida Manavar Peravai' },
-  'hero.tagline': { ta: 'சமூக நீதி, சமத்துவம், பகுத்தறிவு.', en: 'Social Justice, Equality, Rationalism.' },
+  'hero.tagline': {
+    ta: 'சமூக நீதி, சமத்துவம், பகுத்தறிவு விழிப்புணர்வு.',
+    en: 'Social Justice, Equality, Rationalist Awareness.',
+  },
   'hero.tag': {
     ta: 'தமிழ் இளைஞர்களின் சமத்துவம், பகுத்தறிவு மற்றும் மரியாதைக்கான திராவிட இலட்சியத்தை முன்னெடுக்கும் மாணவர் இயக்கம்.',
     en: 'A student movement carrying forward the Dravidian ideal of equality, rationalism and dignity for every Tamil.',
@@ -56,7 +60,7 @@ export const translations = {
     ta: 'சுருக்கமாய்ச் சொன்னால், எங்கள் தோள்கள் தாங்கிப் பிடித்த திராவிட இயக்கக் கொள்கைகளை, ஒரு நாளும் தாழாமல், தங்கள் தோள்களில் அடுத்த தலைமுறை தாங்கிப் பிடிக்க வேண்டும்.',
     en: 'In short, the next generation must carry on their own shoulders — without ever letting it fall — the Dravidian movement’s principles that our shoulders have carried.',
   },
-  'about.quoteAttribution': { ta: 'சுப. வீரபாண்டியன், நிறுவனர்', en: 'Suba Veerapandiyan, Founder' },
+  'about.quoteAttribution': { ta: 'பேராசிரியர் சுப. வீரபாண்டியன், நிறுவனர்', en: 'Professor Suba Veerapandiyan, Founder' },
 
   // FORUMS - STAT ROW
   'forums.activeForumsLabel': { ta: 'செயலில் உள்ள மன்றங்கள்', en: 'Active Forums' },
@@ -271,7 +275,7 @@ export const translations = {
     en: 'The complete embodiment of the civility that still remains in Indian politics, the peak of composure, the summit of administrative skill — the one who protected and rescued Tamil Nadu over the past five years from the twin dangers of Covid and majoritarian politics.\n\nThe architect of Tamil Nadu\'s modern economic policy, the father of the "Naan Mudhalvan" scheme, the mother-like figure who gave children their breakfast, the one who has stood his ground in an uncompromising fight with the Union government to win back Tamil Nadu\'s rights. He is the present-day leader of the Dravida Munnetra Kazhagam, Muthuvel Karunanidhi Stalin.',
   },
 
-  'leaders.subavee.name': { ta: 'பேரா. சுப. வீரபாண்டியன் ("சுபவீ")', en: 'Prof. Suba Veerapandiyan ("Subavee")' },
+  'leaders.subavee.name': { ta: 'பேராசிரியர் சுப. வீரபாண்டியன் ("சுபவீ")', en: 'Professor Suba Veerapandiyan ("Subavee")' },
   'leaders.subavee.role': { ta: 'நிறுவனர், திராவிட மாணவர் பேரவை', en: 'Founder, Dravida Manavar Peravai' },
   'leaders.subavee.bio': {
     ta: 'சுபவீ என்று அழைக்கப்படும் பேராசிரியர் சுப. வீரபாண்டியன், ஏப்ரல் 22, 1952 அன்று காரைக்குடியில் இராம. சுப்பையா - விசாலாட்சி தம்பதியரின் மகனாக பிறந்தவர். இளம் வயது முதலே திராவிட இயக்கக் கொள்கைகளில் ஈடுபாடு கொண்டு ஜாதி ஒழிப்பு, ஆதிக்க எதிர்ப்பு, தாய்மொழிப் பற்று, பெண் விடுதலை, பகுத்தறிவு ஆகியவற்றைப் பரப்பி வருபவர்.\n\nபெரியார், அம்பேத்கர் ஆகியோரின் சிந்தனைகளைப் பின்பற்றும் பகுத்தறிவாளரான இவர், பச்சையப்பன் கல்லூரியில் படித்து, சென்னைக் கல்லூரியொன்றில் 21 ஆண்டுகள் ஆசிரியராகப் பணியாற்றிவிட்டு, 45ஆம் வயதில் விருப்ப ஓய்வு பெற்று முழுநேர பொதுவாழ்வில் இறங்கினார். 2007ஆம் ஆண்டு "திராவிட இயக்கத் தமிழர் பேரவை" என்னும் அமைப்பை நிறுவி அதன் பொதுச்செயலாளராகச் செயல்பட்ட இவர், கடந்த மூன்று ஆண்டுகளாக அதன் தலைவராக இருந்து வருகிறார்.\n\n"கருஞ்சட்டைத் தமிழர்" மற்றும் "திராவிட முழக்கம்" ஆகிய இதழ்களின் ஆசிரியராகவும் இருந்து வரும் இவர் அரசியல், வரலாறு, இலக்கியம் தொடர்பான 35 நூல்களை எழுதியுள்ளார். தமிழ்நாடு அரசின் தந்தை பெரியார் விருது, கலைமாமணி விருது உள்ளிட்ட பல்வேறு விருதுகளை இவர் பெற்றுள்ளார்.',
@@ -350,7 +354,7 @@ export const translations = {
   'founderPopup.trigger': { ta: 'குறிப்புகள்', en: 'Notes' },
   'founderPopup.founderTab': { ta: "நிறுவனரின் குறிப்பு", en: "Founder's Note" },
   'founderPopup.secretaryTab': { ta: 'செயலாளரின் குறிப்பு', en: "Secretary's Note" },
-  'founderPopup.founderName': { ta: 'சுப. வீரபாண்டியன்', en: 'Suba Veerapandiyan' },
+  'founderPopup.founderName': { ta: 'பேராசிரியர் சுப. வீரபாண்டியன்', en: 'Professor Suba Veerapandiyan' },
   'founderPopup.founderRole': { ta: 'நிறுவனர், திராவிட மாணவர் பேரவை', en: 'Founder, Dravida Manavar Peravai' },
   'founderPopup.founderTitle': { ta: 'வாருங்கள், இணையுங்கள்...!', en: 'Come, Join Us...!' },
   'founderPopup.founderBody': {
@@ -364,6 +368,19 @@ export const translations = {
     ta: 'இன்றைய மாணவர்களே, நாளைய சமுதாயம். சமுதாயத்தின் ஆக்கமும் செயலுமாக இயங்குவதும், சமுதாயத்தை இயக்குவதும் அரசியலே. எந்தச் சமூகத்தில் மாணவர்கள் மற்றும் இளைஞர்கள் அரசியல் அறிவற்றவர்களாக இருக்கிறார்களோ அந்தச் சமூகத்திற்கு எதிரான அரசியலே தலை தூக்கும். ஆகவே நாம் ஒவ்வொருவரும் அரசியல் பேச வேண்டும், அரசியல் படிக்க வேண்டும், அரசியலை புரிந்து கொள்ள வேண்டும், அரசியலில் ஈடுபட வேண்டும்...!\n\nஅதிகாரத்தைப் பயன்படுத்தி புராண இதிகாச பாத்திரங்களின் பெருமை பேசி, சமூகத்தை பின்னோக்கி இழுத்துச் செல்லும் அரசியல் தலைமை வேண்டுமா...?\n\nஅல்லது அறிவியல் தொழில்நுட்பத்தின் துணையோடு கல்வி, மருத்துவம், தொழில், வேலைவாய்ப்பு மற்றும் கட்டமைப்பு வசதிகளைப் பெருக்கி நம் கல்வி, சமூக, பொருளாதார நிலையை முன்னேற்றும் அரசியல் தலைமை வேண்டுமா?\n\nசிந்திப்பீர்...!\n\nமண், இனம், மொழி, வாழ்வுரிமை ஆகியவற்றை பாதுகாத்து எல்லோருக்கும் எல்லாம் என்கிற சமூக நீதி அரசியலை புரிந்து கொண்டவர்களாக மாணவர்கள் எழுவார்கள் எனில், அந்த மண்ணில் சனாதனம், மதவெறி, ஜாதிய தீண்டாமை, மொழி திணிப்பு உள்ளிட்ட பிற்போக்கு மற்றும் அடக்குமுறை அரசியலுக்கு இடம் இருக்காது.\n\nசமூக நீதி, மொழி மற்றும் வாழ்வுரிமை காத்திட, ஜாதியை ஒழித்திட, பகுத்தறிவு வளர்த்திட மாணவர்களே இன்றே திராவிட மாணவர் பேரவையில் அணி திரள்வீர்...!',
     en: "Today's students are tomorrow's society. What runs a society, its very creation and action, is politics. In any society where students and youth remain ignorant of politics, it is anti-people politics that will rise to the top there. That is why every one of us must talk politics, study politics, understand politics, and get involved in politics...!\n\nDo you want a political leadership that uses its power to glorify mythological and epic characters while dragging society backward...?\n\nOr do you want a political leadership that uses the aid of science and technology to expand education, healthcare, industry, employment and infrastructure — advancing our educational, social and economic condition?\n\nThink about it...!\n\nIf students rise up having understood the politics of social justice — \"everything for everyone\" — that protects our land, our people, our language and our right to live, then there will be no room in that land for regressive and oppressive politics such as Sanatana orthodoxy, religious fanaticism, caste untouchability and language imposition.\n\nTo protect social justice, language and the right to live, to annihilate caste, and to nurture rationalism — students, rally into Dravida Manavar Peravai today...!",
   },
+
+  // BLOG
+  'blog.eyebrow': { ta: 'எங்கள் கருத்துக்கள்', en: 'Our Voice' },
+  'blog.title': { ta: 'வலைப்பதிவு', en: 'Blog' },
+  'page.blogSubtitle': {
+    ta: 'அரசியல், சமூகநீதி, வரலாறு மற்றும் நடப்பு நிகழ்வுகள் குறித்த எங்கள் கட்டுரைகள்.',
+    en: 'Our writing on politics, social justice, history and current events.',
+  },
+  'blog.readMore': { ta: 'மேலும் படிக்க', en: 'Read More' },
+  'page.blogBack': { ta: 'அனைத்து பதிவுகள்', en: 'All Posts' },
+  'page.blogNotFound': { ta: 'இந்தப் பதிவு கிடைக்கவில்லை.', en: 'This post could not be found.' },
+  'page.blogEmpty': { ta: 'விரைவில் புதிய பதிவுகள் வெளியிடப்படும்.', en: 'New posts will be published here soon.' },
+  'blogDetail.otherPosts': { ta: 'மற்ற பதிவுகளைப் பாருங்கள்', en: 'More Posts' },
 } as const
 
 export type TranslationKey = keyof typeof translations

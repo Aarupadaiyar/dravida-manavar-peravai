@@ -26,6 +26,7 @@ export default function Footer() {
               <Link to="/leaders">{t('nav.leaders')}</Link>
               <Link to="/forums">{t('nav.forums')}</Link>
               <Link to="/events">{t('nav.events')}</Link>
+              <Link to="/blog">{t('nav.blog')}</Link>
             </div>
             <div className="footer-col">
               <h4>{t('footer.leadership')}</h4>

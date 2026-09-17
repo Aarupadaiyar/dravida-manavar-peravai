@@ -6,6 +6,7 @@ import ambedkarPhoto from '../assets/thinkers/ambedkar.jpg'
 import annaPhoto from '../assets/leaders/anna.jpg'
 import kalaignarPhoto from '../assets/leaders/kalaignar.jpg'
 import stalinPhoto from '../assets/leaders/stalin.jpg'
+import subaveePhoto from '../assets/leaders/subavee.jpeg'
 
 export interface Leader {
   id: string
@@ -23,5 +24,5 @@ export const LEADERS: Leader[] = [
   { id: 'anna', photo: annaPhoto, nameKey: 'leaders.anna.name', roleKey: 'leaders.anna.role', bioKey: 'leaders.anna.bio' },
   { id: 'kalaignar', photo: kalaignarPhoto, nameKey: 'leaders.kalaignar.name', roleKey: 'leaders.kalaignar.role', bioKey: 'leaders.kalaignar.bio' },
   { id: 'stalin', photo: stalinPhoto, nameKey: 'leaders.stalin.name', roleKey: 'leaders.stalin.role', bioKey: 'leaders.stalin.bio' },
-  { id: 'subavee', photo: logo, nameKey: 'leaders.subavee.name', roleKey: 'leaders.subavee.role', bioKey: 'leaders.subavee.bio' },
+  { id: 'subavee', photo: subaveePhoto, nameKey: 'leaders.subavee.name', roleKey: 'leaders.subavee.role', bioKey: 'leaders.subavee.bio' },
 ]

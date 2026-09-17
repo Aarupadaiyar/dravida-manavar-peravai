@@ -6,6 +6,8 @@ import LeadersPage from './pages/Leaders'
 import Forums from './pages/Forums'
 import ForumDetail from './pages/ForumDetail'
 import Events from './pages/Events'
+import Blog from './pages/Blog'
+import BlogDetail from './pages/BlogDetail'
 import Contact from './pages/Contact'
 import Join from './pages/Join'
 
@@ -19,6 +21,8 @@ export default function App() {
         <Route path="/forums" element={<Forums />} />
         <Route path="/forums/:forumId" element={<ForumDetail />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:blogId" element={<BlogDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/join" element={<Join />} />
       </Route>

@@ -55,10 +55,6 @@ export default function Hero() {
       <div className="hero-vignette" />
       <div className="hero-grain" />
       <div className="hero-inner">
-        <div className="eyebrow hero-eyebrow">{t('hero.eyebrow')}</div>
-        <p className="hero-welcome">
-          {t('hero.welcome')} {t('hero.welcomeName')}
-        </p>
         <h1 className="hero-banner">
           <span className="hero-banner-row">திராவிட மாணவர் பேரவை</span>
         </h1>

@@ -11,6 +11,7 @@ const LINKS = [
   { to: '/leaders', key: 'nav.leaders' as const },
   { to: '/forums', key: 'nav.forums' as const },
   { to: '/events', key: 'nav.events' as const },
+  { to: '/blog', key: 'nav.blog' as const },
   { to: '/contact', key: 'nav.contact' as const },
 ]
 
