@@ -26,6 +26,7 @@ export default function Navbar() {
   }, [pathname])
 
   return (
+    <>
     <nav className="navbar">
       <Link to="/" onClick={() => setMenuOpen(false)}>
         <img src={logo} alt="Dravida Manavar Peravai" className="logo-badge" />
@@ -67,17 +68,18 @@ export default function Navbar() {
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
-
-      <div className={`mobile-menu ${menuOpen ? 'is-open' : ''}`}>
-        {LINKS.map((link) => (
-          <Link key={link.key} to={link.to} className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
-            {t(link.key)}
-          </Link>
-        ))}
-        <Button className="mobile-menu-join" onClick={() => navigate('/join')}>
-          {t('nav.join')}
-        </Button>
-      </div>
     </nav>
+
+    <div className={`mobile-menu ${menuOpen ? 'is-open' : ''}`}>
+      {LINKS.map((link) => (
+        <Link key={link.key} to={link.to} className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
+          {t(link.key)}
+        </Link>
+      ))}
+      <Button className="mobile-menu-join" onClick={() => navigate('/join')}>
+        {t('nav.join')}
+      </Button>
+    </div>
+    </>
   )
 }
