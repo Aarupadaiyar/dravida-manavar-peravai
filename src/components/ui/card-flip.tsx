@@ -10,6 +10,7 @@ export interface CardFlipProps {
   logo?: string
   className?: string
   onClick?: () => void
+  joinLabel?: string
 }
 
 export default function CardFlip({
@@ -20,6 +21,7 @@ export default function CardFlip({
   logo,
   className,
   onClick,
+  joinLabel = 'Join this forum',
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false)
 
@@ -163,7 +165,7 @@ export default function CardFlip({
               type="button"
             >
               <span className="font-medium text-sm text-white transition-colors duration-300 group-hover/start:text-[#ff6b52]">
-                Join this club
+                {joinLabel}
               </span>
               <div className="group/icon relative">
                 <div className="absolute inset-[-6px] scale-90 rounded-lg bg-gradient-to-br from-[#cc0000]/20 via-[#cc0000]/10 to-transparent opacity-0 transition-[transform,opacity] duration-300 group-hover/start:scale-100 group-hover/start:opacity-100" />

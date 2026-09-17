@@ -3,6 +3,7 @@ export const translations = {
   'nav.home': { ta: 'முகப்பு', en: 'Home' },
   'nav.about': { ta: 'எங்களைப் பற்றி', en: 'About Us' },
   'nav.leaders': { ta: 'நமது தலைவர்கள்', en: 'Our Leaders' },
+  'nav.forums': { ta: 'மன்றங்கள்', en: 'Forums' },
   'nav.events': { ta: 'நிகழ்வுகள்', en: 'Events' },
   'nav.contact': { ta: 'தொடர்பு கொள்ள', en: 'Contact Us' },
   'nav.join': { ta: 'DMP-இல் இணையுங்கள்', en: 'Join DMP' },
@@ -30,34 +31,19 @@ export const translations = {
     ta: 'இன்றைய மாணவர்களே நாளைய சமுதாயம். அரசியல் அறியாத மாணவர் சமூகம் உள்ள இடத்தில் எதிர் மக்கள் அரசியலே தலைதூக்கும். அதனால் ஒவ்வொரு தமிழ் மாணவனும் பேச வேண்டும், படிக்க வேண்டும், புரிந்து கொள்ள வேண்டும், செயல்பட வேண்டும்.',
     en: "Today's students are tomorrow's society. Where a student community remains ignorant of politics, it is anti-people politics that rises to the top. That is why every Tamil student must speak, study, understand and act.",
   },
-  'home.teaserAboutTitle': { ta: 'எங்களைப் பற்றி', en: 'About Us' },
-  'home.teaserAboutDesc': {
-    ta: 'நமது தொலைநோக்கு, வரலாறு, சாதனைகள் மற்றும் இணை அமைப்புகள்.',
-    en: 'Our vision, history, impact and affiliate bodies.',
-  },
-  'home.teaserLeadersTitle': { ta: 'நமது தலைவர்கள்', en: 'Our Leaders' },
-  'home.teaserLeadersDesc': {
-    ta: 'எங்கள் கொள்கையை வடிவமைத்த எட்டு தலைவர்களின் முழு வரலாறு.',
-    en: 'The full stories of the eight leaders who shaped our ideology.',
-  },
-  'home.teaserEventsTitle': { ta: 'நிகழ்வுகள் & சங்கங்கள்', en: 'Events & Clubs' },
-  'home.teaserEventsDesc': {
-    ta: 'உறுப்பினர்கள் செயல்படும் ஐந்து சங்கங்கள் மற்றும் வரவிருக்கும் நிகழ்வுகள்.',
-    en: 'The five clubs where members take action, and what\'s coming up.',
-  },
-  'home.teaserContactTitle': { ta: 'தொடர்பு கொள்ள', en: 'Contact Us' },
-  'home.teaserContactDesc': {
-    ta: 'எங்களைப் பின்தொடரவும், உரையாடவும்.',
-    en: 'Follow along, or get in touch.',
+  // HOME - MANIFESTO SPLIT
+  'home.manifestoQuote': {
+    ta: 'மண், இனம், மொழி, வாழ்வுரிமை ஆகியவற்றை பாதுகாத்து எல்லோருக்கும் எல்லாம் என்கிற சமூக நீதி அரசியலை புரிந்து கொண்டவர்களாக மாணவர்கள் எழுவார்கள் எனில், அந்த மண்ணில் சனாதனம், மதவெறி, ஜாதிய தீண்டாமை, மொழி திணிப்பு உள்ளிட்ட பிற்போக்கு மற்றும் அடக்குமுறை அரசியலுக்கு இடம் இருக்காது.',
+    en: 'If students rise up having understood the politics of social justice — "everything for everyone" — that protects our land, our people, our language and our right to live, then there will be no room in that land for regressive and oppressive politics such as Sanatana orthodoxy, religious fanaticism, caste untouchability and language imposition.',
   },
 
   // HOME - PREVIEW STRIPS
   'home.leadersPreviewEyebrow': { ta: 'சிலரை அறிமுகம் செய்கிறோம்', en: 'A Glimpse of Our Roster' },
   'home.leadersPreviewTitle': { ta: 'எங்கள் தலைவர்களைச் சந்திக்கவும்', en: 'Meet Our Leaders' },
   'home.leadersPreviewCta': { ta: 'அனைத்து 8 தலைவர்களையும் காண', en: 'See All 8 Leaders' },
-  'home.clubsPreviewEyebrow': { ta: 'உறுப்பினர்கள் செயல்படும் இடம்', en: 'Where Members Take Action' },
-  'home.clubsPreviewTitle': { ta: 'எங்கள் சங்கங்கள்', en: 'Our Clubs' },
-  'home.clubsPreviewCta': { ta: 'அனைத்து சங்கங்களையும் காண', en: 'See All Clubs & Events' },
+  'home.forumsPreviewEyebrow': { ta: 'உறுப்பினர்கள் செயல்படும் இடம்', en: 'Where Members Take Action' },
+  'home.forumsPreviewTitle': { ta: 'எங்கள் மன்றங்கள்', en: 'Our Forums' },
+  'home.forumsPreviewCta': { ta: 'அனைத்து மன்றங்களையும் காண', en: 'See All Forums' },
 
   // LEADERSHIP SPOTLIGHT (Founder/Secretary photo cards)
   'spotlight.eyebrow': { ta: 'தலைமையிலிருந்து', en: 'From The Leadership' },
@@ -72,18 +58,73 @@ export const translations = {
   },
   'about.quoteAttribution': { ta: 'சுப. வீரபாண்டியன், நிறுவனர்', en: 'Suba Veerapandiyan, Founder' },
 
-  // EVENTS - STAT ROW
-  'events.activeClubsLabel': { ta: 'செயலில் உள்ள சங்கங்கள்', en: 'Active Clubs' },
+  // FORUMS - STAT ROW
+  'forums.activeForumsLabel': { ta: 'செயலில் உள்ள மன்றங்கள்', en: 'Active Forums' },
 
-  // CLUB DETAIL - CROSS LINKS
-  'clubDetail.otherClubs': { ta: 'மற்ற சங்கங்களைப் பாருங்கள்', en: 'Explore Other Clubs' },
+  // FORUM DETAIL - CROSS LINKS
+  'forumDetail.otherForums': { ta: 'மற்ற மன்றங்களைப் பாருங்கள்', en: 'Explore Other Forums' },
+
+  // JOIN FORM
+  'join.eyebrow': { ta: 'எங்களுடன் இணையுங்கள்', en: 'Become a Member' },
+  'join.title': { ta: 'DMP-இல் இணையுங்கள்', en: 'Join DMP' },
+  'join.subtitle': {
+    ta: 'கீழே உங்கள் விவரங்களை பூர்த்தி செய்யவும் — எங்கள் குழு உங்களைத் தொடர்பு கொள்ளும்.',
+    en: "Fill in your details below and our team will reach out to you.",
+  },
+  'join.consentNote': {
+    ta: 'உங்கள் விவரங்கள் திராவிட மாணவர் பேரவையின் தொடர்பு நோக்கங்களுக்காக மட்டுமே பயன்படுத்தப்படும்.',
+    en: "Your details will be used only for Dravida Manavar Peravai's outreach purposes.",
+  },
+  'join.fullName': { ta: 'முழுப் பெயர்', en: 'Full Name' },
+  'join.age': { ta: 'வயது', en: 'Age' },
+  'join.gender': { ta: 'பாலினம்', en: 'Gender' },
+  'join.genderMale': { ta: 'ஆண்', en: 'Male' },
+  'join.genderFemale': { ta: 'பெண்', en: 'Female' },
+  'join.genderTransgender': { ta: 'திருநங்கை/திருநம்பி', en: 'Transgender' },
+  'join.genderOther': { ta: 'மற்றவை', en: 'Other' },
+  'join.otherSpecify': { ta: 'குறிப்பிடவும்', en: 'Please specify' },
+  'join.phone': { ta: 'தொலைபேசி எண்', en: 'Phone Number' },
+  'join.email': { ta: 'மின்னஞ்சல்', en: 'Email Address' },
+  'join.profession': { ta: 'தொழில்', en: 'Profession / Occupation' },
+  'join.education': { ta: 'உயர் கல்வித் தகுதி', en: 'Highest Education' },
+  'join.educationHint': {
+    ta: 'எ.கா. 12ஆம் வகுப்பு, இளங்கலை, முதுகலை',
+    en: 'e.g. Grade 12, Bachelors, Post Graduate',
+  },
+  'join.bloodGroup': { ta: 'இரத்த வகை', en: 'Blood Group' },
+  'join.address': { ta: 'முழு முகவரி', en: 'Full Address' },
+  'join.district': { ta: 'மாவட்டம்', en: 'District' },
+  'join.state': { ta: 'மாநிலம்', en: 'State' },
+  'join.forumInterest': { ta: 'நீங்கள் இணைய விரும்பும் மன்றம் (விருப்பம்)', en: 'Which Forum Interests You Most (Optional)' },
+  'join.forumNotSure': { ta: 'இன்னும் தெரியவில்லை', en: 'Not sure yet' },
+  'join.message': { ta: 'ஏன் இணைய விரும்புகிறீர்கள்?', en: 'Why do you want to join?' },
+  'join.submit': { ta: 'சமர்ப்பிக்க', en: 'Submit' },
+  'join.submitting': { ta: 'சமர்ப்பிக்கப்படுகிறது...', en: 'Submitting...' },
+  'join.successTitle': { ta: 'நன்றி!', en: 'Thank You!' },
+  'join.successBody': {
+    ta: 'உங்கள் விவரங்கள் பதிவு செய்யப்பட்டன. எங்கள் குழு விரைவில் உங்களைத் தொடர்பு கொள்ளும்.',
+    en: "Your details have been recorded. Our team will reach out to you soon.",
+  },
+  'join.errorBody': {
+    ta: 'ஏதோ தவறு நடந்தது. மீண்டும் முயற்சிக்கவும்.',
+    en: 'Something went wrong. Please try again.',
+  },
+  'join.required': { ta: '(கட்டாயம்)', en: '(required)' },
+  'join.configPending': {
+    ta: 'படிவம் இன்னும் இணைக்கப்படவில்லை — நிர்வாகி Google Form விவரங்களைச் சேர்க்க வேண்டும்.',
+    en: 'This form is not yet connected — an admin needs to add the Google Form configuration.',
+  },
 
   // PAGE HEADERS
   'page.aboutEyebrow': { ta: 'எங்கள் இயக்கம்', en: 'Our Movement' },
   'page.aboutTitle': { ta: 'எங்களைப் பற்றி', en: 'About Us' },
+  'page.forumsSubtitle': {
+    ta: 'உறுப்பினர்கள் செயல்படும் ஐந்து மன்றங்கள் — விவரங்களுக்கு ஒரு மன்றத்தைத் தேர்ந்தெடுக்கவும்.',
+    en: 'Five forums where members take action — select one for the full picture.',
+  },
   'page.eventsSubtitle': {
-    ta: 'உறுப்பினர்கள் செயல்படும் ஐந்து சங்கங்கள் — விவரங்களுக்கு ஒரு சங்கத்தைத் தேர்ந்தெடுக்கவும்.',
-    en: 'Five clubs where members take action — select one for the full picture.',
+    ta: 'போராட்டங்கள், கூட்டங்கள் மற்றும் சந்திப்புகள் குறித்த அறிவிப்புகள் இங்கே இடம்பெறும்.',
+    en: 'Announcements for protests, gatherings and meetups will appear here.',
   },
   'page.contactEyebrow': { ta: 'எங்களுடன் இணையுங்கள்', en: 'Get In Touch' },
   'page.contactTitle': { ta: 'தொடர்பு கொள்ள', en: 'Contact Us' },
@@ -92,12 +133,13 @@ export const translations = {
     en: "An official email, phone number and address will be added here soon.",
   },
   'page.contactSocialTitle': { ta: 'எங்களைப் பின்தொடருங்கள்', en: 'Follow Us' },
-  'page.clubNotFound': {
-    ta: 'இந்த சங்கம் கிடைக்கவில்லை.',
-    en: 'This club could not be found.',
+  'page.forumNotFound': {
+    ta: 'இந்த மன்றம் கிடைக்கவில்லை.',
+    en: 'This forum could not be found.',
   },
-  'page.clubBack': { ta: 'அனைத்து சங்கங்கள்', en: 'All Clubs' },
-  'page.clubJoin': { ta: 'இந்த சங்கத்தில் இணையுங்கள்', en: 'Join This Club' },
+  'page.forumBack': { ta: 'அனைத்து மன்றங்கள்', en: 'All Forums' },
+  'page.forumJoin': { ta: 'இந்த மன்றத்தில் இணையுங்கள்', en: 'Join This Forum' },
+  'page.forumJoinUs': { ta: 'எங்களுடன் இணையுங்கள்', en: 'Join Us' },
 
   // VISION & MISSION
   'visionMission.eyebrow': { ta: 'நமது திசைகாட்டி', en: 'Our Compass' },
@@ -114,30 +156,66 @@ export const translations = {
 
   // HISTORY
   'history.eyebrow': { ta: 'இரு தசாப்த போராட்டம்', en: 'Two Decades of Struggle' },
-  'history.title': { ta: 'நமது வரலாறு', en: 'Our History' },
-  'history.item1.date': { ta: 'மே 2007', en: 'May 2007' },
-  'history.item1.title': { ta: 'அடித்தளம்', en: 'The Foundation' },
+  'history.title': { ta: '20 ஆண்டுகள் - இடைவிடாத பயணம்!', en: '20 Years — An Uninterrupted Journey!' },
+  'history.item1.date': { ta: '2007', en: '2007' },
+  'history.item1.title': { ta: 'திராவிட இயக்கத் தமிழர் பேரவை', en: 'Dravida Iyakka Tamizhar Peravai' },
   'history.item1.body': {
-    ta: 'தாய் அமைப்பான திராவிட இயக்கத் தமிழர் பேரவை சென்னை காமராஜர் அரங்கில் தொடங்கப்பட்டு, அப்போதைய தமிழ்நாடு நிதி அமைச்சர் பேராசிரியர் க. அன்பழகன் அவர்களால் தொடங்கி வைக்கப்பட்டது. மாணவர் பிரிவான திராவிட மாணவர் பேரவையும் அதே நேரத்தில், ஜாதி ஒழிப்பு மற்றும் பகுத்தறிவு குறித்து கல்லூரி, பல்கலைக்கழக மாணவர்களுக்குக் கற்பிக்க நிறுவப்பட்டது.',
-    en: 'The parent organisation, Dravida Iyakka Tamizhar Peravai, was launched at Kamarajar Arangam, Chennai, inaugurated by then Tamil Nadu Finance Minister Prof. K. Anbazhagan. The student wing, Dravida Manavar Peravai, was institutionalised alongside it to systematically educate college and university students on anti-caste ideology and rationalism.',
+    ta: 'இயக்கத்தின் தாய் அமைப்பு நிறுவப்பட்டது.',
+    en: "The movement's parent organisation was founded.",
   },
-  'history.item2.date': { ta: '2014', en: '2014' },
-  'history.item2.title': { ta: '"திராவிடம் 100" இயக்கம்', en: '"Dravidam 100" Campaign' },
+  'history.item2.date': { ta: '2007', en: '2007' },
+  'history.item2.title': { ta: 'கருஞ்சட்டைத் தமிழர்', en: 'Karunchattai Thamizhar' },
   'history.item2.body': {
-    ta: 'நீதிக்கட்சி தோற்றுவிக்கப்பட்ட 1916ஆம் ஆண்டிலிருந்து நூறாண்டு திராவிட சிந்தனையை நினைவுகூரும் வகையில், இட ஒதுக்கீடு மற்றும் சமூக நீதியின் வரலாற்றை மாணவர்களுக்குக் கற்பிக்க பேரவை இளைஞர் பேரணிகள், விவாத அரங்குகள் மற்றும் கல்லூரி சொற்பொழிவுகளை முன்னெடுத்தது.',
-    en: 'Marking a century of organised Dravidian ideology, tracing back to the 1916 formation of the Justice Party, DMP spearheaded youth rallies, debate circles and campus lectures teaching students the history of reservation and social justice in South India.',
+    ta: 'மாத இதழாகத் தொடங்கி, இன்று வார மின்னிதழாக வெளிவருகிறது.',
+    en: 'Launched as a monthly magazine; today it publishes as a weekly e-magazine.',
   },
-  'history.item3.date': { ta: '2017 – 2020', en: '2017 – 2020' },
-  'history.item3.title': { ta: 'நீட் எதிர்ப்பு மற்றும் கூட்டாட்சி போராட்டங்கள்', en: 'Anti-NEET & Federalism Protests' },
+  'history.item3.date': { ta: '2011', en: '2011' },
+  'history.item3.title': { ta: 'திராவிடம் 100', en: 'Dravidam 100' },
   'history.item3.body': {
-    ta: 'தமிழ்நாட்டில் நீட் தேர்வு அமல்படுத்தப்பட்டதைத் தொடர்ந்து, கல்வி என்பது மத்திய அரசால் திணிக்கப்படும் ஒன்றல்ல, மாநில உரிமை என்ற நிலைப்பாட்டுடன் பேரவை பரவலான மாணவர் போராட்டங்களை முன்னெடுத்தது.',
-    en: "Following the implementation of national-level exams like NEET in Tamil Nadu, DMP mobilised widespread student agitation, positioning education as a state-level right rather than a centrally mandated system.",
+    ta: 'இயக்கத்தின் கருத்துகளைப் பரப்பும் யூடியூப் தளம் தொடங்கப்பட்டது.',
+    en: "The movement's YouTube channel was launched to spread its ideas.",
   },
-  'history.item4.date': { ta: 'இன்று', en: 'Present' },
-  'history.item4.title': { ta: 'தொடரும் அமைப்புப் பணிகள்', en: 'Ongoing Institution-Building' },
+  'history.item4.date': { ta: '2018', en: '2018' },
+  'history.item4.title': { ta: 'கருஞ்சட்டைப் பதிப்பகம்', en: 'Karunchattai Pathippagam' },
   'history.item4.body': {
-    ta: 'கருஞ்சட்டைத் தமிழர் பதிப்பகம், திராவிடப் பள்ளி மற்றும் திராவிட நட்பு கழகம் ஆகியவற்றின் மூலம், பேரவை தன் கொள்கைகளை இன்றைய இளைய தலைமுறைக்குத் தொடர்ந்து கடத்தி வருகிறது.',
-    en: 'DMP carries its ideology forward through Karunchattai Pathippagam (Blackshirt Publishing House), Dravida Palli (Dravidian Ideological School) and Dravida Nutpu Kazhagam (Dravidian Friendship Forum), passing foundational thought to millennial and Gen-Z students.',
+    ta: 'இயக்கத்தின் புத்தக வெளியீட்டுப் பிரிவு நிறுவப்பட்டது.',
+    en: "The movement's book-publishing wing was founded.",
+  },
+  'history.item5.date': { ta: '2019', en: '2019' },
+  'history.item5.title': { ta: 'இனமானப் பேராசிரியர் படிப்பு வட்டம்', en: 'Inamana Perasiriyar Study Circle' },
+  'history.item5.body': {
+    ta: 'கொள்கைப் பயிற்சிக்கான படிப்பு வட்டம் தொடங்கப்பட்டது.',
+    en: 'A study circle for ideological training was started.',
+  },
+  'history.item6.date': { ta: '2020', en: '2020' },
+  'history.item6.title': { ta: 'திராவிடப் பள்ளி', en: 'Dravida Palli' },
+  'history.item6.body': {
+    ta: 'கொள்கைக் கல்விக்கான திராவிடப் பள்ளி நிறுவப்பட்டது.',
+    en: 'The Dravida Palli ideological school was established.',
+  },
+  'history.item7.date': { ta: '2021', en: '2021' },
+  'history.item7.title': { ta: 'கல்வி உதவித் திட்டம்', en: 'Education Assistance Scheme' },
+  'history.item7.body': {
+    ta: 'மாணவர்களுக்கான கல்வி உதவித் திட்டம் தொடங்கப்பட்டது.',
+    en: 'An education assistance scheme for students was launched.',
+  },
+  'history.item8.date': { ta: '2022', en: '2022' },
+  'history.item8.title': { ta: 'திராவிட நட்புக் கழகம்', en: 'Dravida Nadpu Kazhagam' },
+  'history.item8.body': {
+    ta: 'நட்பு வலையமைப்பாக திராவிட நட்புக் கழகம் தொடங்கப்பட்டது.',
+    en: 'The Dravida Friendship Association was founded as a support network.',
+  },
+  'history.item9.date': { ta: '2024', en: '2024' },
+  'history.item9.title': { ta: 'திராவிட மாணவர் பேரவை', en: 'Dravida Manavar Peravai' },
+  'history.item9.body': {
+    ta: 'இயக்கத்தின் மாணவர் பிரிவாக திராவிட மாணவர் பேரவை நிறுவப்பட்டது.',
+    en: "Dravida Manavar Peravai was founded as the movement's student wing.",
+  },
+  'history.item10.date': { ta: '2024', en: '2024' },
+  'history.item10.title': { ta: 'திராவிட முழக்கம்', en: 'Dravida Muzhakkam' },
+  'history.item10.body': {
+    ta: 'இயக்கத்தின் கருத்தாயுதமாக மாத இதழ் தொடங்கப்பட்டது.',
+    en: "The movement's monthly ideological journal was launched.",
   },
 
   // LEADERS
@@ -229,11 +307,14 @@ export const translations = {
     en: 'The Dravidian Ideological School for principle-based training.',
   },
 
-  // CLUBS & EVENTS
-  'clubs.eyebrow': { ta: 'உறுப்பினர்கள் செயல்படும் இடம்', en: 'Where Members Take Action' },
-  'clubs.title': { ta: 'நமது சங்கங்கள் & நிகழ்வுகள்', en: 'Clubs & Events' },
-  'clubs.eventsTitle': { ta: 'வரவிருக்கும் நிகழ்வுகள்', en: 'Upcoming Events' },
-  'clubs.eventsEmpty': {
+  // FORUMS
+  'forums.eyebrow': { ta: 'உறுப்பினர்கள் செயல்படும் இடம்', en: 'Where Members Take Action' },
+  'forums.title': { ta: 'நமது மன்றங்கள்', en: 'Our Forums' },
+
+  // EVENTS (dedicated page)
+  'events.eyebrow': { ta: 'என்ன நடக்கிறது', en: "What's Coming Up" },
+  'events.title': { ta: 'நிகழ்வுகள்', en: 'Events' },
+  'events.empty': {
     ta: 'தற்போது திட்டமிடப்பட்ட நிகழ்வுகள் இல்லை — விரைவில் இங்கு பார்க்கவும்.',
     en: 'No events scheduled yet — check back soon.',
   },

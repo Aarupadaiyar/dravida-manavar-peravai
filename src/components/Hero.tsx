@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Button from './Button'
 import bgVideo from '../assets/background.mp4'
 import { useLang } from '../i18n/LanguageContext'
 
@@ -68,7 +67,9 @@ export default function Hero() {
         </p>
         <p className="hero-tag">{t('hero.tag')}</p>
         <div className="hero-cta-row">
-          <Button className="btn-sun">{t('hero.ctaJoin')}</Button>
+          <Link to="/join" className="btn-primary btn-sun">
+            {t('hero.ctaJoin')}
+          </Link>
           <Link to="/leaders" className="btn-sun-outline">
             {t('hero.ctaLeaders')}
           </Link>

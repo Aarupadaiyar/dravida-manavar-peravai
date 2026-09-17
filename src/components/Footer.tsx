@@ -24,6 +24,7 @@ export default function Footer() {
               <h4>{t('footer.movement')}</h4>
               <Link to="/about">{t('nav.about')}</Link>
               <Link to="/leaders">{t('nav.leaders')}</Link>
+              <Link to="/forums">{t('nav.forums')}</Link>
               <Link to="/events">{t('nav.events')}</Link>
             </div>
             <div className="footer-col">

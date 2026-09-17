@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
-import { Mail, Landmark, Users, CalendarDays, ArrowUpRight } from 'lucide-react'
-import Button from '../components/Button'
+import { Mail, Landmark, Users, MessageSquare, CalendarDays, ArrowUpRight } from 'lucide-react'
 import { SOCIALS } from '../components/SocialIcons'
 import { Reveal } from '../components/core/Reveal'
 import { useLang } from '../i18n/LanguageContext'
 
 const QUICK_LINKS = [
-  { to: '/about', titleKey: 'home.teaserAboutTitle' as const, Icon: Landmark },
-  { to: '/leaders', titleKey: 'home.teaserLeadersTitle' as const, Icon: Users },
-  { to: '/events', titleKey: 'home.teaserEventsTitle' as const, Icon: CalendarDays },
+  { to: '/about', titleKey: 'nav.about' as const, Icon: Landmark },
+  { to: '/leaders', titleKey: 'nav.leaders' as const, Icon: Users },
+  { to: '/forums', titleKey: 'nav.forums' as const, Icon: MessageSquare },
+  { to: '/events', titleKey: 'nav.events' as const, Icon: CalendarDays },
 ]
 
 export default function Contact() {
@@ -35,7 +35,9 @@ export default function Contact() {
               </a>
             ))}
           </div>
-          <Button>{t('nav.join')}</Button>
+          <Link to="/join" className="btn-primary">
+            {t('nav.join')}
+          </Link>
         </Reveal>
 
         <div className="contact-quick-links">
