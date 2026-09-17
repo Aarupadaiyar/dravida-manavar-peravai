@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { Landmark, Users, CalendarDays, Mail } from 'lucide-react'
 import Hero from '../components/Hero'
+import LeadersPreview from '../components/LeadersPreview'
+import ClubsPreview from '../components/ClubsPreview'
+import LeadershipSpotlight from '../components/LeadershipSpotlight'
 import Stats from '../components/Stats'
 import Cta from '../components/Cta'
 import { Reveal } from '../components/core/Reveal'
@@ -49,6 +52,9 @@ export default function Home() {
         </div>
       </section>
 
+      <LeadersPreview />
+      <ClubsPreview />
+      <LeadershipSpotlight />
       <Stats />
       <Cta />
     </>

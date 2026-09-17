@@ -3,8 +3,16 @@ import { createPortal } from 'react-dom'
 import { motion } from 'framer-motion'
 import { MessageCircle, X } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
+import suPaveePhoto from '../assets/people/su-pavee.jpg'
+import arulPhoto from '../assets/people/arul.jpg'
 
 type Tab = 'founder' | 'secretary'
+
+const OPEN_EVENT = 'dmp:open-founder-popup'
+
+export function openFounderPopup(tab: Tab = 'founder') {
+  window.dispatchEvent(new CustomEvent<Tab>(OPEN_EVENT, { detail: tab }))
+}
 
 export default function FounderPopup() {
   const [open, setOpen] = useState(false)
@@ -14,6 +22,16 @@ export default function FounderPopup() {
   const { t } = useLang()
 
   useEffect(() => setMounted(true), [])
+
+  useEffect(() => {
+    const onOpenRequest = (e: Event) => {
+      const detail = (e as CustomEvent<Tab>).detail
+      if (detail) setTab(detail)
+      setOpen(true)
+    }
+    window.addEventListener(OPEN_EVENT, onOpenRequest)
+    return () => window.removeEventListener(OPEN_EVENT, onOpenRequest)
+  }, [])
 
   useEffect(() => {
     if (open) {
@@ -87,15 +105,25 @@ export default function FounderPopup() {
               <div className="founder-panel-body">
                 {tab === 'founder' ? (
                   <>
-                    <h3 className="founder-panel-name">{t('founderPopup.founderName')}</h3>
-                    <p className="founder-panel-role">{t('founderPopup.founderRole')}</p>
+                    <div className="founder-panel-head">
+                      <img src={suPaveePhoto} alt={t('founderPopup.founderName')} className="founder-panel-photo" />
+                      <div>
+                        <h3 className="founder-panel-name">{t('founderPopup.founderName')}</h3>
+                        <p className="founder-panel-role">{t('founderPopup.founderRole')}</p>
+                      </div>
+                    </div>
                     <p className="founder-panel-title">{t('founderPopup.founderTitle')}</p>
                     <p className="founder-panel-text">{t('founderPopup.founderBody')}</p>
                   </>
                 ) : (
                   <>
-                    <h3 className="founder-panel-name">{t('founderPopup.secretaryName')}</h3>
-                    <p className="founder-panel-role">{t('founderPopup.secretaryRole')}</p>
+                    <div className="founder-panel-head">
+                      <img src={arulPhoto} alt={t('founderPopup.secretaryName')} className="founder-panel-photo" />
+                      <div>
+                        <h3 className="founder-panel-name">{t('founderPopup.secretaryName')}</h3>
+                        <p className="founder-panel-role">{t('founderPopup.secretaryRole')}</p>
+                      </div>
+                    </div>
                     <p className="founder-panel-title">{t('founderPopup.secretaryTitle')}</p>
                     <p className="founder-panel-text">{t('founderPopup.secretaryBody')}</p>
                   </>

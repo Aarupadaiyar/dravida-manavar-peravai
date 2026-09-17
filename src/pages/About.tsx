@@ -3,6 +3,8 @@ import VisionMission from '../components/VisionMission'
 import History from '../components/History'
 import Impact from '../components/Impact'
 import ParallelBody from '../components/ParallelBody'
+import PullQuote from '../components/PullQuote'
+import LeadershipSpotlight from '../components/LeadershipSpotlight'
 import { Reveal } from '../components/core/Reveal'
 import { useLang } from '../i18n/LanguageContext'
 
@@ -23,9 +25,11 @@ export default function About() {
         </div>
       </section>
       <VisionMission />
+      <PullQuote quoteKey="about.quote" attributionKey="about.quoteAttribution" />
       <History />
       <Impact />
       <ParallelBody />
+      <LeadershipSpotlight alt />
     </>
   )
 }

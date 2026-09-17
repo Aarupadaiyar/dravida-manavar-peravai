@@ -24,6 +24,8 @@ export default function ClubDetail() {
     )
   }
 
+  const otherClubs = CLUBS.filter((c) => c.id !== club.id)
+
   return (
     <section className="section">
       <div className="wrap">
@@ -48,6 +50,18 @@ export default function ClubDetail() {
           </div>
           <Button>{t('page.clubJoin')}</Button>
         </Reveal>
+
+        <div className="club-detail-others">
+          <h3 className="events-title">{t('clubDetail.otherClubs')}</h3>
+          <div className="club-detail-others-row">
+            {otherClubs.map((other) => (
+              <Link key={other.id} to={`/events/${other.id}`} className="club-detail-other-card">
+                <img src={other.logo} alt="" />
+                <span>{other.title}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -51,6 +51,33 @@ export const translations = {
     en: 'Follow along, or get in touch.',
   },
 
+  // HOME - PREVIEW STRIPS
+  'home.leadersPreviewEyebrow': { ta: 'சிலரை அறிமுகம் செய்கிறோம்', en: 'A Glimpse of Our Roster' },
+  'home.leadersPreviewTitle': { ta: 'எங்கள் தலைவர்களைச் சந்திக்கவும்', en: 'Meet Our Leaders' },
+  'home.leadersPreviewCta': { ta: 'அனைத்து 8 தலைவர்களையும் காண', en: 'See All 8 Leaders' },
+  'home.clubsPreviewEyebrow': { ta: 'உறுப்பினர்கள் செயல்படும் இடம்', en: 'Where Members Take Action' },
+  'home.clubsPreviewTitle': { ta: 'எங்கள் சங்கங்கள்', en: 'Our Clubs' },
+  'home.clubsPreviewCta': { ta: 'அனைத்து சங்கங்களையும் காண', en: 'See All Clubs & Events' },
+
+  // LEADERSHIP SPOTLIGHT (Founder/Secretary photo cards)
+  'spotlight.eyebrow': { ta: 'தலைமையிலிருந்து', en: 'From The Leadership' },
+  'spotlight.title': { ta: 'தலைமைப் பார்வை', en: 'Leadership Spotlight' },
+  'spotlight.founderCta': { ta: "நிறுவனரின் குறிப்பைப் படிக்க", en: "Read Founder's Note" },
+  'spotlight.secretaryCta': { ta: 'செயலாளரின் குறிப்பைப் படிக்க', en: "Read Secretary's Note" },
+
+  // ABOUT - PULL QUOTE
+  'about.quote': {
+    ta: 'சுருக்கமாய்ச் சொன்னால், எங்கள் தோள்கள் தாங்கிப் பிடித்த திராவிட இயக்கக் கொள்கைகளை, ஒரு நாளும் தாழாமல், தங்கள் தோள்களில் அடுத்த தலைமுறை தாங்கிப் பிடிக்க வேண்டும்.',
+    en: 'In short, the next generation must carry on their own shoulders — without ever letting it fall — the Dravidian movement’s principles that our shoulders have carried.',
+  },
+  'about.quoteAttribution': { ta: 'சுப. வீரபாண்டியன், நிறுவனர்', en: 'Suba Veerapandiyan, Founder' },
+
+  // EVENTS - STAT ROW
+  'events.activeClubsLabel': { ta: 'செயலில் உள்ள சங்கங்கள்', en: 'Active Clubs' },
+
+  // CLUB DETAIL - CROSS LINKS
+  'clubDetail.otherClubs': { ta: 'மற்ற சங்கங்களைப் பாருங்கள்', en: 'Explore Other Clubs' },
+
   // PAGE HEADERS
   'page.aboutEyebrow': { ta: 'எங்கள் இயக்கம்', en: 'Our Movement' },
   'page.aboutTitle': { ta: 'எங்களைப் பற்றி', en: 'About Us' },

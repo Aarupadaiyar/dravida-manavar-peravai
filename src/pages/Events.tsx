@@ -19,6 +19,9 @@ export default function Events() {
           <div className="eyebrow">{t('clubs.eyebrow')}</div>
           <h1 className="section-title">{t('clubs.title')}</h1>
           <p className="page-header-subtitle">{t('page.eventsSubtitle')}</p>
+          <div className="events-stat-badge">
+            <strong>{CLUBS.length}</strong> {t('events.activeClubsLabel')}
+          </div>
         </Reveal>
         <div className="clubs-grid">
           {CLUBS.map((club, i) => (
