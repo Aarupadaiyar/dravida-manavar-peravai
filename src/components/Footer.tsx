@@ -43,7 +43,14 @@ export default function Footer() {
               {/* TODO: real contact details (email/phone/address) pending from user */}
               <div className="footer-social-row">
                 {SOCIALS.map(({ id, Icon, href, label }) => (
-                  <a key={id} href={href} className="footer-social-icon" aria-label={label}>
+                  <a
+                    key={id}
+                    href={href}
+                    target={href === '#' ? undefined : '_blank'}
+                    rel={href === '#' ? undefined : 'noopener noreferrer'}
+                    className="footer-social-icon"
+                    aria-label={label}
+                  >
                     <Icon />
                   </a>
                 ))}
@@ -54,6 +61,12 @@ export default function Footer() {
         <div className="footer-bottom">
           <span>&copy; {t('footer.rights')}</span>
           <span>{t('hero.eyebrow')}</span>
+        </div>
+        <div className="footer-credit">
+          Built by <span className="footer-credit-link">Statsix</span> &middot; Developer:{' '}
+          <a href="https://wa.me/916374597047" target="_blank" rel="noopener noreferrer" className="footer-credit-link">
+            Aarupadaiyar KJ
+          </a>
         </div>
       </div>
     </footer>

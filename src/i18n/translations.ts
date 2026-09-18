@@ -123,8 +123,8 @@ export const translations = {
   'page.aboutEyebrow': { ta: 'எங்கள் இயக்கம்', en: 'Our Movement' },
   'page.aboutTitle': { ta: 'எங்களைப் பற்றி', en: 'About Us' },
   'page.forumsSubtitle': {
-    ta: 'உறுப்பினர்கள் செயல்படும் ஐந்து மன்றங்கள் — விவரங்களுக்கு ஒரு மன்றத்தைத் தேர்ந்தெடுக்கவும்.',
-    en: 'Five forums where members take action — select one for the full picture.',
+    ta: 'உறுப்பினர்கள் செயல்படும் மன்றங்கள் — விவரங்களுக்கு ஒரு மன்றத்தைத் தேர்ந்தெடுக்கவும்.',
+    en: 'Forums where members take action — select one for the full picture.',
   },
   'page.eventsSubtitle': {
     ta: 'போராட்டங்கள், கூட்டங்கள் மற்றும் சந்திப்புகள் குறித்த அறிவிப்புகள் இங்கே இடம்பெறும்.',

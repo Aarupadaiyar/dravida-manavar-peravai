@@ -1,12 +1,12 @@
 import type { TranslationKey } from '../i18n/translations'
-import marxPhoto from '../assets/thinkers/karl-marx.jpg'
-import periyarPhoto from '../assets/thinkers/periyar.jpg'
-import ambedkarPhoto from '../assets/thinkers/ambedkar.jpg'
-import annaPhoto from '../assets/leaders/anna.jpg'
+import marxPhoto from '../assets/leaders/karl-marx.jpeg'
+import periyarPhoto from '../assets/leaders/periyar.jpeg'
+import ambedkarPhoto from '../assets/leaders/ambedkar.jpeg'
+import annaPhoto from '../assets/leaders/annadurai.jpeg'
 import kalaignarPhoto from '../assets/leaders/kalaignar.jpg'
 import stalinPhoto from '../assets/leaders/stalin.jpg'
 import subaveePhoto from '../assets/leaders/subavee.jpeg'
-import bhagatSinghPhoto from '../assets/leaders/66647631209c52c059d2b34d5a2b7d1d.jpg'
+import bhagatSinghPhoto from '../assets/leaders/bhagat-singh.jpeg'
 
 export interface Leader {
   id: string

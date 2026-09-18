@@ -30,7 +30,14 @@ export default function Contact() {
           <h3 className="contact-social-title">{t('page.contactSocialTitle')}</h3>
           <div className="contact-social-row">
             {SOCIALS.map(({ id, Icon, href, label }) => (
-              <a key={id} href={href} className="footer-social-icon" aria-label={label}>
+              <a
+                key={id}
+                href={href}
+                target={href === '#' ? undefined : '_blank'}
+                rel={href === '#' ? undefined : 'noopener noreferrer'}
+                className="footer-social-icon"
+                aria-label={label}
+              >
                 <Icon />
               </a>
             ))}

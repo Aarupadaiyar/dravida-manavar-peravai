@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { Reveal } from '../components/core/Reveal'
 import { FORUMS } from '../data/forums'
 import { useLang } from '../i18n/LanguageContext'
+import { InstagramIcon } from '../components/SocialIcons'
 
 export default function ForumDetail() {
   const { forumId } = useParams<{ forumId: string }>()
@@ -47,9 +48,22 @@ export default function ForumDetail() {
               </span>
             ))}
           </div>
-          <Link to={`/join?forum=${encodeURIComponent(forum.title)}`} className="btn-primary">
-            {t('page.forumJoin')}
-          </Link>
+          <div className="forum-detail-actions">
+            <Link to={`/join?forum=${encodeURIComponent(forum.title)}`} className="btn-primary">
+              {t('page.forumJoin')}
+            </Link>
+            {forum.instagram && (
+              <a
+                href={forum.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social-icon forum-detail-instagram"
+                aria-label="Instagram"
+              >
+                <InstagramIcon />
+              </a>
+            )}
+          </div>
         </Reveal>
 
         <div className="forum-detail-others">

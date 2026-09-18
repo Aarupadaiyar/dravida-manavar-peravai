@@ -34,7 +34,7 @@ export function YoutubeIcon() {
 }
 
 export const SOCIALS = [
-  { id: 'instagram', Icon: InstagramIcon, href: '#', label: 'Instagram' },
+  { id: 'instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/dmp_ditp', label: 'Instagram' },
   { id: 'facebook', Icon: FacebookIcon, href: '#', label: 'Facebook' },
   { id: 'twitter', Icon: TwitterIcon, href: '#', label: 'Twitter' },
   { id: 'youtube', Icon: YoutubeIcon, href: '#', label: 'YouTube' },
