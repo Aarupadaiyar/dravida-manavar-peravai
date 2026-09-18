@@ -15,24 +15,22 @@ export default function LeadershipSpotlight({ alt = false }: { alt?: boolean }) 
           <h2 className="section-title">{t('spotlight.title')}</h2>
         </div>
         <div className="spotlight-grid">
-          <Reveal>
+          <Reveal className="spotlight-reveal">
             <button type="button" className="spotlight-card" onClick={() => openFounderPopup('founder')}>
               <img src={suPaveePhoto} alt={t('founderPopup.founderName')} className="spotlight-photo" />
-              <div>
-                <h3>{t('founderPopup.founderName')}</h3>
-                <p className="spotlight-role">{t('founderPopup.founderRole')}</p>
-                <span className="spotlight-cta">{t('spotlight.founderCta')} &rarr;</span>
-              </div>
+              <h3>{t('founderPopup.founderName')}</h3>
+              <p className="spotlight-role">{t('founderPopup.founderRole')}</p>
+              <p className="spotlight-tagline">&ldquo;{t('founderPopup.founderTitle')}&rdquo;</p>
+              <span className="spotlight-cta">{t('spotlight.founderCta')} &rarr;</span>
             </button>
           </Reveal>
-          <Reveal delayMs={90}>
+          <Reveal className="spotlight-reveal" delayMs={90}>
             <button type="button" className="spotlight-card" onClick={() => openFounderPopup('secretary')}>
               <img src={arulPhoto} alt={t('founderPopup.secretaryName')} className="spotlight-photo" />
-              <div>
-                <h3>{t('founderPopup.secretaryName')}</h3>
-                <p className="spotlight-role">{t('founderPopup.secretaryRole')}</p>
-                <span className="spotlight-cta">{t('spotlight.secretaryCta')} &rarr;</span>
-              </div>
+              <h3>{t('founderPopup.secretaryName')}</h3>
+              <p className="spotlight-role">{t('founderPopup.secretaryRole')}</p>
+              <p className="spotlight-tagline">&ldquo;{t('founderPopup.secretaryTitle')}&rdquo;</p>
+              <span className="spotlight-cta">{t('spotlight.secretaryCta')} &rarr;</span>
             </button>
           </Reveal>
         </div>

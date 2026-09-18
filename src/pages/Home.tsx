@@ -18,7 +18,6 @@ export default function Home() {
       <section className="section">
         <div className="wrap">
           <Reveal className="why-strip">
-            <div className="eyebrow">{t('home.whyEyebrow')}</div>
             <h2 className="section-title">{t('home.whyTitle')}</h2>
             <p>{t('home.whyBody')}</p>
           </Reveal>

@@ -4,7 +4,7 @@ import periyarPhoto from '../assets/leaders/periyar.jpeg'
 import ambedkarPhoto from '../assets/leaders/ambedkar.jpeg'
 import annaPhoto from '../assets/leaders/annadurai.jpeg'
 import kalaignarPhoto from '../assets/leaders/kalaignar.jpg'
-import stalinPhoto from '../assets/leaders/stalin.jpg'
+import stalinPhoto from '../assets/leaders/stalin.jpeg'
 import subaveePhoto from '../assets/leaders/subavee.jpeg'
 import bhagatSinghPhoto from '../assets/leaders/bhagat-singh.jpeg'
 
