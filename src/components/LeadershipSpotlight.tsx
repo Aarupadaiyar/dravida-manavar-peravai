@@ -17,7 +17,13 @@ export default function LeadershipSpotlight({ alt = false }: { alt?: boolean }) 
         <div className="spotlight-grid">
           <Reveal className="spotlight-reveal">
             <button type="button" className="spotlight-card" onClick={() => openFounderPopup('founder')}>
-              <img src={suPaveePhoto} alt={t('founderPopup.founderName')} className="spotlight-photo" />
+              <img
+                src={suPaveePhoto}
+                alt={t('founderPopup.founderName')}
+                className="spotlight-photo"
+                loading="lazy"
+                decoding="async"
+              />
               <h3>{t('founderPopup.founderName')}</h3>
               <p className="spotlight-role">{t('founderPopup.founderRole')}</p>
               <p className="spotlight-tagline">&ldquo;{t('founderPopup.founderTitle')}&rdquo;</p>
@@ -26,7 +32,13 @@ export default function LeadershipSpotlight({ alt = false }: { alt?: boolean }) 
           </Reveal>
           <Reveal className="spotlight-reveal" delayMs={90}>
             <button type="button" className="spotlight-card" onClick={() => openFounderPopup('secretary')}>
-              <img src={arulPhoto} alt={t('founderPopup.secretaryName')} className="spotlight-photo" />
+              <img
+                src={arulPhoto}
+                alt={t('founderPopup.secretaryName')}
+                className="spotlight-photo"
+                loading="lazy"
+                decoding="async"
+              />
               <h3>{t('founderPopup.secretaryName')}</h3>
               <p className="spotlight-role">{t('founderPopup.secretaryRole')}</p>
               <p className="spotlight-tagline">&ldquo;{t('founderPopup.secretaryTitle')}&rdquo;</p>

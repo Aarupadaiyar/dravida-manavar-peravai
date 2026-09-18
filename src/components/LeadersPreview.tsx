@@ -20,7 +20,13 @@ export default function LeadersPreview() {
           {preview.map((leader, i) => (
             <Reveal key={leader.id} delayMs={i * 70}>
               <Link to={`/leaders#leader-${leader.id}`} className="leaders-preview-card">
-                <img src={leader.photo} alt={t(leader.nameKey)} className="leaders-preview-photo" />
+                <img
+                  src={leader.photo}
+                  alt={t(leader.nameKey)}
+                  className="leaders-preview-photo"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span className="leaders-preview-name">{t(leader.nameKey)}</span>
               </Link>
             </Reveal>

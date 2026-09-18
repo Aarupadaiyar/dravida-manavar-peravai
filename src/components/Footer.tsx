@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="wrap">
         <div className="footer-top">
           <div className="brand-lockup">
-            <img src={logo} alt="Dravida Manavar Peravai" className="logo-badge" />
+            <img src={logo} alt="Dravida Manavar Peravai" className="logo-badge" loading="lazy" decoding="async" />
             <div>
               <div className="brand-name" style={{ fontSize: 15 }}>
                 திராவிட மாணவர் பேரவை

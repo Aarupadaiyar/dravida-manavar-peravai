@@ -8,7 +8,7 @@ export default function ManifestoSplit() {
   return (
     <section className="manifesto-split">
       <div className="manifesto-split-media">
-        <img src={logo} alt="Dravida Manavar Peravai" />
+        <img src={logo} alt="Dravida Manavar Peravai" loading="lazy" decoding="async" />
       </div>
       <div className="manifesto-split-text">
         <Reveal>

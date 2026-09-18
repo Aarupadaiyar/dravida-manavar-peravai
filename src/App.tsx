@@ -1,15 +1,17 @@
+import { lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
-import About from './pages/About'
-import LeadersPage from './pages/Leaders'
-import Forums from './pages/Forums'
-import ForumDetail from './pages/ForumDetail'
-import Events from './pages/Events'
-import Blog from './pages/Blog'
-import BlogDetail from './pages/BlogDetail'
-import Contact from './pages/Contact'
-import Join from './pages/Join'
+
+const About = lazy(() => import('./pages/About'))
+const LeadersPage = lazy(() => import('./pages/Leaders'))
+const Forums = lazy(() => import('./pages/Forums'))
+const ForumDetail = lazy(() => import('./pages/ForumDetail'))
+const Events = lazy(() => import('./pages/Events'))
+const Blog = lazy(() => import('./pages/Blog'))
+const BlogDetail = lazy(() => import('./pages/BlogDetail'))
+const Contact = lazy(() => import('./pages/Contact'))
+const Join = lazy(() => import('./pages/Join'))
 
 export default function App() {
   return (

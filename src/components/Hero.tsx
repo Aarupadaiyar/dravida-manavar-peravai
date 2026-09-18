@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import bgVideo from '../assets/background.mp4'
+import bgPoster from '../assets/background-poster.jpg'
 import { useLang } from '../i18n/LanguageContext'
 
 const SCROLL_LERP = 0.08
@@ -46,6 +47,7 @@ export default function Hero() {
       <video
         className="hero-video"
         src={bgVideo}
+        poster={bgPoster}
         autoPlay
         muted
         loop

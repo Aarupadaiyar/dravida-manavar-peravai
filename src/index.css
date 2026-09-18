@@ -59,6 +59,10 @@ body {
   font-family: var(--font-body);
 }
 
+.route-loading {
+  min-height: 60vh;
+}
+
 a {
   color: var(--red);
   text-decoration: none;

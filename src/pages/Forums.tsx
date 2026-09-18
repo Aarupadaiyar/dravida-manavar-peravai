@@ -27,7 +27,13 @@ export default function Forums() {
           {FORUMS.map((forum, i) => (
             <Reveal key={forum.id} delayMs={Math.min(i, 6) * 60}>
               <div className="forum-card" onClick={() => navigate(`/forums/${forum.id}`)}>
-                <img src={forum.logo} alt={forum.title} className="forum-card-logo" />
+                <img
+                  src={forum.logo}
+                  alt={forum.title}
+                  className="forum-card-logo"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <h3 className="forum-card-title">{forum.title}</h3>
                 <p className="forum-card-desc">{forum.description}</p>
                 <Button

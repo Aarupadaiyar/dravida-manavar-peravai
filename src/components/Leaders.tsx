@@ -10,7 +10,7 @@ export default function Leaders() {
       <div className="leaders-jump-row">
         {LEADERS.map((leader) => (
           <a key={leader.id} href={`#leader-${leader.id}`} className="leaders-jump-item">
-            <img src={leader.photo} alt="" className="leaders-jump-photo" />
+            <img src={leader.photo} alt="" className="leaders-jump-photo" loading="lazy" decoding="async" />
             <span>{t(leader.nameKey)}</span>
           </a>
         ))}
@@ -19,7 +19,13 @@ export default function Leaders() {
         {LEADERS.map((leader, i) => (
           <Reveal key={leader.id} delayMs={Math.min(i, 5) * 80}>
             <article className="leader-full-card" id={`leader-${leader.id}`}>
-              <img src={leader.photo} alt={t(leader.nameKey)} className="leader-full-photo" />
+              <img
+                src={leader.photo}
+                alt={t(leader.nameKey)}
+                className="leader-full-photo"
+                loading="lazy"
+                decoding="async"
+              />
               <div className="leader-full-body">
                 <h3 className="leader-full-name">{t(leader.nameKey)}</h3>
                 <p className="leader-full-role">{t(leader.roleKey)}</p>

@@ -71,7 +71,7 @@ export default function ForumDetail() {
           <div className="forum-detail-others-row">
             {otherForums.map((other) => (
               <Link key={other.id} to={`/forums/${other.id}`} className="forum-detail-other-card">
-                <img src={other.logo} alt="" />
+                <img src={other.logo} alt="" loading="lazy" decoding="async" />
                 <span>{other.title}</span>
               </Link>
             ))}
