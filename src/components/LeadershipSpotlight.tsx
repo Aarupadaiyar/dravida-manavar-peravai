@@ -15,7 +15,7 @@ export default function LeadershipSpotlight({ alt = false }: { alt?: boolean }) 
           <h2 className="section-title">{t('spotlight.title')}</h2>
         </div>
         <div className="spotlight-grid">
-          <Reveal className="spotlight-reveal">
+          <Reveal className="spotlight-reveal" variant="left">
             <button type="button" className="spotlight-card" onClick={() => openFounderPopup('founder')}>
               <img
                 src={suPaveePhoto}
@@ -30,7 +30,7 @@ export default function LeadershipSpotlight({ alt = false }: { alt?: boolean }) 
               <span className="spotlight-cta">{t('spotlight.founderCta')} &rarr;</span>
             </button>
           </Reveal>
-          <Reveal className="spotlight-reveal" delayMs={90}>
+          <Reveal className="spotlight-reveal" delayMs={90} variant="right">
             <button type="button" className="spotlight-card" onClick={() => openFounderPopup('secretary')}>
               <img
                 src={arulPhoto}

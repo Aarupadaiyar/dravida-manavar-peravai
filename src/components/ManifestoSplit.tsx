@@ -11,7 +11,7 @@ export default function ManifestoSplit() {
         <img src={logo} alt="Dravida Manavar Peravai" loading="lazy" decoding="async" />
       </div>
       <div className="manifesto-split-text">
-        <Reveal>
+        <Reveal variant="right">
           <p>{t('home.manifestoQuote')}</p>
         </Reveal>
       </div>

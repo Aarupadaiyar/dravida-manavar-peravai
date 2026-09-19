@@ -22,7 +22,7 @@ export default function ParallelBody() {
           <h2 className="section-title">{t('parallelBody.title')}</h2>
         </div>
         <div className="parallel-grid">
-          <Reveal>
+          <Reveal variant="scale">
             <a href="#" className="parallel-card">
               <span className="parallel-card-icon">
                 <Landmark size={20} />
@@ -32,7 +32,7 @@ export default function ParallelBody() {
             </a>
           </Reveal>
 
-          <Reveal delayMs={80}>
+          <Reveal delayMs={80} variant="scale">
             <a href="#" className="parallel-card">
               <span className="parallel-card-icon">
                 <BookOpen size={20} />
@@ -42,7 +42,7 @@ export default function ParallelBody() {
             </a>
           </Reveal>
 
-          <Reveal delayMs={160}>
+          <Reveal delayMs={160} variant="scale">
             <MorphingDialog transition={{ type: 'spring', bounce: 0.05, duration: 0.25 }}>
               <MorphingDialogTrigger className="parallel-card is-clickable">
                 <span className="parallel-card-icon">

@@ -25,7 +25,7 @@ export default function Blog() {
         ) : (
           <div className="blog-card-grid">
             {BLOG_POSTS.map((post, i) => (
-              <Reveal key={post.id} delayMs={Math.min(i, 6) * 60}>
+              <Reveal key={post.id} delayMs={Math.min(i, 6) * 60} variant="scale">
                 <article className="blog-card" onClick={() => navigate(`/blog/${post.id}`)}>
                   {post.date && <span className="blog-card-date">{post.date}</span>}
                   <h3 className="blog-card-title">{post.title}</h3>

@@ -25,7 +25,7 @@ export default function Forums() {
         </Reveal>
         <div className="forums-card-grid">
           {FORUMS.map((forum, i) => (
-            <Reveal key={forum.id} delayMs={Math.min(i, 6) * 60}>
+            <Reveal key={forum.id} delayMs={Math.min(i, 6) * 60} variant="scale">
               <div className="forum-card" onClick={() => navigate(`/forums/${forum.id}`)}>
                 <img
                   src={forum.logo}

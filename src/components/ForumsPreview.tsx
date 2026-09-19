@@ -18,7 +18,7 @@ export default function ForumsPreview() {
         </div>
         <div className="forums-preview-row">
           {preview.map((forum, i) => (
-            <Reveal key={forum.id} delayMs={i * 70}>
+            <Reveal key={forum.id} delayMs={i * 70} variant="scale">
               <Link to={`/forums/${forum.id}`} className="forums-preview-card">
                 <img src={forum.logo} alt="" className="forums-preview-logo" loading="lazy" decoding="async" />
                 <span className="forums-preview-title">{forum.title}</span>

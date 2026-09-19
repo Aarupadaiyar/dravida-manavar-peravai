@@ -17,7 +17,7 @@ export default function Leaders() {
       </div>
       <div className="leaders-full-list">
         {LEADERS.map((leader, i) => (
-          <Reveal key={leader.id} delayMs={Math.min(i, 5) * 80}>
+          <Reveal key={leader.id} delayMs={Math.min(i, 5) * 80} variant={i % 2 === 0 ? 'left' : 'right'}>
             <article className="leader-full-card" id={`leader-${leader.id}`}>
               <img
                 src={leader.photo}

@@ -18,7 +18,7 @@ export default function LeadersPreview() {
         </div>
         <div className="leaders-preview-grid">
           {preview.map((leader, i) => (
-            <Reveal key={leader.id} delayMs={i * 70}>
+            <Reveal key={leader.id} delayMs={i * 70} variant="scale">
               <Link to={`/leaders#leader-${leader.id}`} className="leaders-preview-card">
                 <img
                   src={leader.photo}

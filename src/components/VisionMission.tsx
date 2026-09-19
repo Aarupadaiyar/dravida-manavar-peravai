@@ -10,7 +10,7 @@ export default function VisionMission() {
       <div className="wrap">
         <div className="eyebrow vm-section-eyebrow">{t('visionMission.eyebrow')}</div>
         <div className="vm-grid">
-          <Reveal className="vm-card">
+          <Reveal className="vm-card" variant="left">
             <span className="vm-card-icon">
               <Compass size={22} />
             </span>
@@ -21,7 +21,7 @@ export default function VisionMission() {
                 <p key={i}>{para}</p>
               ))}
           </Reveal>
-          <Reveal className="vm-card vm-card--green" delayMs={100}>
+          <Reveal className="vm-card vm-card--green" delayMs={100} variant="right">
             <span className="vm-card-icon vm-card-icon--green">
               <Target size={22} />
             </span>
